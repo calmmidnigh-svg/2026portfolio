@@ -27,6 +27,7 @@ const PROJECTS = [
     title: '지식 공유 강의 플랫폼',
     tags: ['Side Project', 'UX Research'],
     image: '/images/unretired.png',
+    href: '/work/unretired',
   },
 ];
 
