@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import Image from 'next/image';
 import styles from './ChatBot.module.scss';
 
 interface Message {
@@ -91,9 +92,7 @@ export default function ChatBot() {
           disabled={loading || !input.trim()}
           aria-label="전송"
         >
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-          </svg>
+          <Image src="/send.svg" alt="전송" width={24} height={24} />
         </button>
       </div>
     </div>
