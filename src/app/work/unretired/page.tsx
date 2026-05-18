@@ -104,9 +104,6 @@ export default function UnretiredPage() {
             </div>
           </div>
 
-          {/* 이미지 */}
-          <div className={styles.imageFull} />
-
           {/* 작업과정 02, 03 */}
           <div className={styles.body} style={{ paddingTop: 0, paddingBottom: 0 }}>
             <div className={styles.section}>
