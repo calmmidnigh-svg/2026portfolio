@@ -9,19 +9,23 @@
 .suggestions {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
+  align-items: flex-start;
 }
 
 .suggestion {
   background: var(--color-surface);
   border-radius: 12px 12px 12px 0;
   padding: 12px 16px;
-  font-size: 16px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
   font-weight: 500;
   color: var(--color-secondary);
   cursor: pointer;
-  transition: background 0.15s;
   white-space: nowrap;
+  transition: background 0.15s;
 
   &:hover {
     background: #ebebeb;
@@ -32,7 +36,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-height: 260px;
+  flex: 1;
   overflow-y: auto;
   padding-right: 4px;
 
@@ -53,7 +57,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  max-width: 90%;
+  max-width: 85%;
 
   &.user {
     background: var(--color-send);
@@ -104,6 +108,7 @@
   padding: 12px 16px 12px 32px;
   width: 100%;
   transition: border-color 0.2s;
+  flex-shrink: 0;
 
   &:focus-within {
     border-color: #aaa;
@@ -112,9 +117,10 @@
 
 .input {
   flex: 1;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--color-text);
+  min-width: 0;
 
   &::placeholder {
     color: var(--color-secondary);
@@ -131,6 +137,7 @@
   align-items: center;
   justify-content: center;
   transition: background 0.2s;
+  flex-shrink: 0;
 
   &:hover {
     background: #222;
