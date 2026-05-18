@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HR전자계약서 — 최윤정 케이스 스터디</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --color-text: #222;
+      --color-secondary: #666;
+      --color-border: #eee;
+      --color-surface: #f5f5f5;
+    }
+
+    body {
+      font-family: 'Pretendard', -apple-system, sans-serif;
+      background: #fefefe;
+      color: var(--color-text);
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* GNB */
+    .gnb {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      padding: 16px;
+      background: rgba(254,254,254,0.92);
+      backdrop-filter: blur(12px);
+    }
+    .gnb-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1440px;
+    }
+    .gnb-logo {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    /* Page */
+    .page { padding-top: 64px; min-height: 100vh; }
+
+    /* Header */
+    .header {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 80px 24px 64px;
+    }
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--color-secondary);
+      margin-bottom: 40px;
+    }
+    .meta {
+      font-size: 13px;
+      color: var(--color-secondary);
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .title {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 32px;
+    }
+    .overview-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    .overview-table tr { border-top: 1px solid var(--color-border); }
+    .overview-table tr:last-child { border-bottom: 1px solid var(--color-border); }
+    .overview-table td { padding: 12px 0; line-height: 1.6; vertical-align: top; }
+    .overview-table td:first-child {
+      font-weight: 500;
+      color: var(--color-secondary);
+      width: 100px;
+      white-space: nowrap;
+    }
+
+    /* Full-bleed image */
+    .image-full {
+      width: 100%;
+      background: var(--color-surface);
+      aspect-ratio: 16 / 9;
+    }
+    .image-grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: #e0e0e0;
+    }
+    .image-grid-item {
+      background: var(--color-surface);
+      aspect-ratio: 4 / 3;
+    }
+
+    /* Body */
+    .body {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 64px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    /* Section */
+    .section {
+      display: flex;
+      gap: 40px;
+    }
+    .section-side {
+      width: 100px;
+      flex-shrink: 0;
+      padding-top: 4px;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--color-secondary);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      line-height: 1.5;
+    }
+    .section-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      min-width: 0;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .text {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--color-text);
+      line-height: 1.85;
+    }
+    .sub-heading {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+    .bullets { display: flex; flex-direction: column; gap: 8px; }
+    .bullet {
+      font-size: 15px;
+      line-height: 1.75;
+      padding-left: 14px;
+      position: relative;
+    }
+    .bullet::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: #bbb;
+      font-size: 12px;
+      top: 3px;
+    }
+    .code-block {
+      background: var(--color-surface);
+      border-radius: 6px;
+      padding: 16px 20px;
+      font-size: 13px;
+      line-height: 1.8;
+      white-space: pre-wrap;
+      font-family: 'Menlo', 'Monaco', monospace;
+    }
+    .step-num {
+      font-size: 11px;
+      font-weight: 600;
+      color: #bbb;
+      letter-spacing: 0.06em;
+    }
+    .highlight {
+      background: var(--color-surface);
+      border-radius: 8px;
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .highlight-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--color-secondary);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .highlight-text {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.7;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--color-border);
+      display: flex;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1440px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-secondary);
+    }
+    .footer-links { display: flex; gap: 12px; }
+  </style>
+</head>
+<body>
+
+  <!-- GNB -->
+  <header class="gnb">
+    <div class="gnb-inner">
+      <a href="/" class="gnb-logo">Vonnepetit</a>
+    </div>
+  </header>
+
+  <div class="page">
+
+    <!-- Header -->
+    <div class="header">
+      <a href="/" class="back">← 전체 작업</a>
+      <p class="meta">B2B SaaS · 헬로인사 · Product Designer</p>
+      <h1 class="title">HR전자계약서</h1>
+      <table class="overview-table">
+        <tbody>
+          <tr><td>역할</td><td>전체 플로우 설계 + 화면 디자인 + 정책 설계</td></tr>
+          <tr><td>상태</td><td>출시 완료</td></tr>
+          <tr><td>적용</td><td>HDS 1.1.1</td></tr>
+          <tr><td>기간</td><td>디자인 시스템 적용 후 6개월 내 출시</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 대표 이미지 -->
+    <div class="image-full"></div>
+
+    <!-- Body -->
+    <div class="body">
+
+      <!-- Problem -->
+      <div class="section">
+        <div class="section-side">
+          <p class="section-label">Problem</p>
+        </div>
+        <div class="section-content">
+          <p class="sub-heading">비즈니스 목표</p>
+          <p class="text">회사의 신규 B2B SaaS 사업으로, 모든 고객사에게 표준화된 형식의 전자계약서를 제공하는 서비스를 처음부터 설계해야 했다.</p>
+          <p class="sub-heading">핵심 UX 과제</p>
+          <p class="text">계약서라는 도메인은 구조적으로 두 가지 상충되는 니즈를 가진다.</p>
+          <div class="bullets">
+            <p class="bullet"><strong>작성자 입장</strong> — 계약서를 빠르고 간단하게 작성하고 싶다</p>
+            <p class="bullet"><strong>수신자 입장</strong> — 계약 내용의 모든 디테일이 정확하게 담긴 문서가 필요하다</p>
+          </div>
+          <p class="text">기존 방식대로라면 작성 화면에서도 모든 세부 내용을 입력해야 해 복잡도가 매우 높아지는 문제가 있었다.</p>
+          <p class="sub-heading">추가 제약</p>
+          <div class="bullets">
+            <p class="bullet">명확한 요구사항 없이 큰 비즈니스 로직만 존재하는 상태에서 출발</p>
+            <p class="bullet">고객사마다 다른 정보 구조를 수용해야 하는 확장성 필요</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 핵심 결정 -->
+      <div class="section">
+        <div class="section-side">
+          <p class="section-label">핵심 결정</p>
+        </div>
+        <div class="section-content">
+          <h2 class="section-title">태그 추상화 시스템</h2>
+          <p class="text">복잡성을 해결하기 위해 태그 기반 추상화 방식을 설계했다.</p>
+          <div class="code-block">계약서 작성 시  →  태그만 표시
+실제 출력 시    →  태그가 디테일 내용으로 자동 치환</div>
+          <div class="bullets">
+            <p class="bullet">관리자가 태그를 정의하고 각 태그에 세부 내용을 연동</p>
+            <p class="bullet">작성 시 태그만 삽입 — 복잡한 내용을 직접 입력하지 않아도 됨</p>
+            <p class="bullet">출력 시 태그가 연동된 디테일 내용으로 자동 변환</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 이미지 그리드 -->
+    <div class="image-grid">
+      <div class="image-grid-item"></div>
+      <div class="image-grid-item"></div>
+      <div class="image-grid-item"></div>
+    </div>
+
+    <div class="body">
+
+      <!-- Process 01 -->
+      <div class="section">
+        <div class="section-side">
+          <p class="section-label">Process</p>
+        </div>
+        <div class="section-content">
+          <p class="step-num">01</p>
+          <h3 class="section-title">기획서 해석 → 플로우 설계</h3>
+          <p class="text">전달받은 기획서는 데이터 필드와 정책이 표 형태로 정리된 러프한 문서였다. 명확한 요구사항 없이 비즈니스 로직만 존재하는 상태에서 서비스 전체의 디테일을 직접 정의해야 했다.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="image-full"></div>
+
+    <div class="body">
+
+      <!-- Process 02 -->
+      <div class="section">
+        <div class="section-side"></div>
+        <div class="section-content">
+          <p class="step-num">02</p>
+          <h3 class="section-title">엣지케이스 기반 화면 설계</h3>
+          <p class="text">요구사항이 불명확한 상황에서 "이 경우엔 어떻게 되는가"를 스스로 정의하며 화면을 설계했다.</p>
+          <div class="bullets">
+            <p class="bullet">고객사별 사용 항목이 다를 때 어떻게 표시할 것인가</p>
+            <p class="bullet">태그가 연동된 데이터가 없을 때의 상태 처리</p>
+            <p class="bullet">계약서 미리보기와 실제 출력의 차이를 어떻게 사용자에게 전달할 것인가</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="image-full"></div>
+
+    <div class="body">
+
+      <!-- Process 03 -->
+      <div class="section">
+        <div class="section-side"></div>
+        <div class="section-content">
+          <p class="step-num">03</p>
+          <h3 class="section-title">HDS 적용</h3>
+          <p class="text">설계된 화면에 HDS 컴포넌트를 적용해 일관된 UI로 구현. 디자인 시스템이 있었기에 화면 수가 많아도 빠르게 완성도를 높일 수 있었다.</p>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div class="section">
+        <div class="section-side">
+          <p class="section-label">Result</p>
+        </div>
+        <div class="section-content">
+          <div class="bullets">
+            <p class="bullet">신규 B2B SaaS 서비스 출시 완료</p>
+            <p class="bullet">기획서(표 형태) → 전체 플로우 + 화면 정책을 1인이 설계</p>
+            <p class="bullet">HDS 적용으로 6개월 내 출시 달성</p>
+            <p class="bullet">태그 시스템으로 작성 복잡도 해소 + 출력 품질 유지</p>
+          </div>
+          <div class="highlight">
+            <p class="highlight-label">가장 직접적인 지표</p>
+            <p class="highlight-text">
+              기존 제품은 신규 사용자에게 프로그램 교육만 2달을 할애했습니다.<br />
+              HR전자계약서 출시 이후, <strong>교육 관련 문의가 단 한 건도 들어오지 않았습니다.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 회고 -->
+      <div class="section">
+        <div class="section-side">
+          <p class="section-label">회고</p>
+        </div>
+        <div class="section-content">
+          <p class="text">이 프로젝트에서 가장 어려웠던 점은 <strong>명확한 요구사항 없이 서비스의 디테일을 스스로 정의해야 했던 것</strong>이다. 요구사항이 완성된 후 디자인하는 것이 아니라, 디자인을 통해 요구사항을 구체화하는 방식으로 일했다.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2026</span>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/yoonjeong-choi" target="_blank">Linkedin</a>
+        <a href="https://vonnepetit.tistory.com" target="_blank">Blog</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
