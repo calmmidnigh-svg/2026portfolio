@@ -18,8 +18,11 @@ export default function ChatBot() {
   const [started, setStarted] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    const el = messagesContainerRef.current;
+    if (el) el.scrollTop = el.scrollHeight;
   }, [messages, loading]);
 
   const send = async (text: string) => {
@@ -63,7 +66,7 @@ export default function ChatBot() {
           ))}
         </div>
       ) : (
-        <div className={styles.messages}>
+        <div className={styles.messages} ref={messagesContainerRef}>
           {messages.map((m, i) => (
             <div key={i} className={`${styles.message} ${styles[m.role]}`}>
               {m.content}
@@ -74,7 +77,6 @@ export default function ChatBot() {
               <span /><span /><span />
             </div>
           )}
-          <div ref={messagesEndRef} />
         </div>
       )}
 

@@ -12,7 +12,7 @@ const SYSTEM_PROMPT = `당신은 최윤정의 포트폴리오 AI 어시스턴트
 - **헬로인사** (2025.06 ~ 현재): 급여 아웃소싱 SaaS, 중소기업
   - HDS 1.1.1 디자인 시스템 솔로 구축 → UI 개발 시간 30~50% 단축
   - HR전자계약서 제품 디자인 (태그 기반 계약 시스템) → 출시 후 교육 관련 VOC 0건
-  - VOC 대시보드 기획+구현 (Gemini API + Rocket.Chat, 바이브 코딩) → 분류 정확도 75%
+  - VOC 대시보드 기획+구현 (채팅 API + Gemini AI, 바이브 코딩) → 분류 정확도 75%
 - **가우스랩** (2023.04 ~ 2025.01): 약 21개월
 
 ## 사이드 프로젝트
@@ -22,7 +22,7 @@ const SYSTEM_PROMPT = `당신은 최윤정의 포트폴리오 AI 어시스턴트
 
 ## 스킬
 - Figma, 디자인 시스템, UX 리서치, 프로토타이핑
-- AI 활용 업무 자동화, 바이브 코딩 (Claude Code, Gemini API)
+- AI 활용 업무 자동화, 바이브 코딩 (Claude Code, OpenAI API)
 - Next.js / React 기반 구현 경험
 
 ## 강점
@@ -34,37 +34,39 @@ const SYSTEM_PROMPT = `당신은 최윤정의 포트폴리오 AI 어시스턴트
 - 한국어로 답변
 - 2-4문장 이내로 간결하게
 - 친근하고 전문적인 톤
+- 최윤정을 3인칭("최윤정은")으로 부르지 말고, 1인칭("저는")으로 답변
 - 모르는 정보는 "자세한 내용은 직접 연락해 주세요 😊"라고 안내`;
 
 export async function POST(req: NextRequest) {
   try {
     const { messages } = await req.json();
-    const apiKey = process.env.GEMINI_API_KEY;
+    const apiKey = process.env.OPENAI_API_KEY;
 
     if (!apiKey) {
       return NextResponse.json({ reply: 'API 키가 설정되지 않았습니다.' }, { status: 500 });
     }
 
-    const contents = [
-      { role: 'user', parts: [{ text: SYSTEM_PROMPT }] },
-      { role: 'model', parts: [{ text: '안녕하세요! 최윤정의 포트폴리오에 오신 것을 환영합니다. 궁금한 점을 자유롭게 물어보세요 😊' }] },
-      ...messages.map((m: { role: string; content: string }) => ({
-        role: m.role === 'user' ? 'user' : 'model',
-        parts: [{ text: m.content }],
-      })),
-    ];
-
-    const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ contents }),
-      }
-    );
+    const res = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        model: 'gpt-4o-mini',
+        messages: [
+          { role: 'system', content: SYSTEM_PROMPT },
+          ...messages.map((m: { role: string; content: string }) => ({
+            role: m.role,
+            content: m.content,
+          })),
+        ],
+        max_tokens: 300,
+      }),
+    });
 
     const data = await res.json();
-    const reply = data.candidates?.[0]?.content?.parts?.[0]?.text ?? `답변을 생성하지 못했습니다. (${JSON.stringify(data.error ?? data.promptFeedback ?? '알 수 없는 오류')})`;
+    const reply = data.choices?.[0]?.message?.content ?? `답변을 생성하지 못했습니다. (${JSON.stringify(data.error ?? '알 수 없는 오류')})`;
 
     return NextResponse.json({ reply });
   } catch {
