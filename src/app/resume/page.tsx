@@ -1,9 +1,11 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import GNB from '@/components/GNB';
 import Footer from '@/components/Footer';
-import PDFViewer from './PDFViewer';
 import styles from './page.module.scss';
+
+const PDFViewer = dynamic(() => import('./PDFViewer'), { ssr: false });
 
 export default function ResumePage() {
   const handleDownloadAll = () => {
