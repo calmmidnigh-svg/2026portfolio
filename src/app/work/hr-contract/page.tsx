@@ -3,9 +3,6 @@ import GNB from '@/components/GNB';
 import Footer from '@/components/Footer';
 import styles from './page.module.scss';
 
-const imgBg = "https://www.figma.com/api/mcp/asset/ff10932e-9937-404c-9bbf-117216215f05";
-const imgToolbar = "https://www.figma.com/api/mcp/asset/06429f36-6f23-48d9-adf2-2f5137dba526";
-
 export default function HRContractPage() {
   return (
     <>
@@ -26,16 +23,9 @@ export default function HRContractPage() {
           </table>
         </div>
 
-        {/* Hero — 파란 그라디언트 + iMac 목업 */}
-        <div className={styles.heroImage}>
-          <div className={styles.mockupWrap}>
-            <div className={styles.mockupToolbar}>
-              <img src={imgToolbar} alt="" />
-            </div>
-            <div className={styles.mockupScreen}>
-              <img src={imgBg} alt="HR전자계약서 화면" />
-            </div>
-          </div>
+        {/* Hero — 실제 제품 스크린샷 */}
+        <div className={styles.imageFull} style={{ overflow: 'hidden' }}>
+          <img src="/images/contract_main.png" alt="HR전자계약서 화면" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
         </div>
 
         <div className={styles.container}>
