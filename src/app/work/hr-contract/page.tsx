@@ -67,7 +67,7 @@ export default function HRContractPage() {
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>태그 추상화 시스템</p>
-                <p className={styles.text}>복잡성을 해결하기 위해 태그 기반 추상화 방식을 설계했다.</p>
+                <p className={styles.text}>복잡성을 해결하기 위해 태그 기반 추상화 방식을 설계했습니다.</p>
                 <div className={styles.codeBlock}>{`계약서 작성 시  →  태그만 표시\n실제 출력 시    →  태그가 디테일 내용으로 자동 치환`}</div>
                 <ul className={styles.bullets}>
                   <li>관리자가 태그를 정의하고 각 태그에 세부 내용을 연동</li>
@@ -130,7 +130,7 @@ export default function HRContractPage() {
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>HDS 적용</p>
                 <p className={styles.text}>
-                  설계된 화면에 HDS 컴포넌트를 적용해 일관된 UI로 구현. 디자인 시스템이 있었기에 화면 수가 많아도 빠르게 완성도를 높일 수 있었습니다.
+                  설계된 화면에 HDS 컴포넌트를 적용해 일관된 UI로 구현했습니다. 디자인 시스템이 있었기에 화면 수가 많아도 빠르게 완성도를 높일 수 있었습니다.
                 </p>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function HRContractPage() {
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
-                  이 프로젝트에서 가장 어려웠던 점은 <strong>명확한 요구사항 없이 서비스의 디테일을 스스로 정의해야 했던 것</strong>이다. 요구사항이 완성된 후 디자인하는 것이 아니라, 디자인을 통해 요구사항을 구체화하는 방식으로 일했다.
+                  이 프로젝트에서 가장 어려웠던 점은 <strong>명확한 요구사항 없이 서비스의 디테일을 스스로 정의해야 했던 것</strong>이었습니다. 요구사항이 완성된 후 디자인하는 것이 아니라, 디자인을 통해 요구사항을 구체화하는 방식으로 일했습니다.
                 </p>
               </div>
             </div>

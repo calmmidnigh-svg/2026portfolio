@@ -63,7 +63,7 @@ export default function UnretiredPage() {
                 <p className={styles.sectionTitle}>화면 전에 수요부터 확인했어요</p>
                 <p className={styles.text}>수강생 니즈를 모르는 채로 화면을 만드는 건 의미가 없다고 판단했습니다.</p>
                 <p className={styles.subHeading}>가설</p>
-                <p className={styles.text}>정년퇴직 고경력자의 경험을 강의로 제공하면, 학습자들이 실제로 원할 것이다.</p>
+                <p className={styles.text}>정년퇴직 고경력자의 경험을 강의로 제공하면, 학습자들이 실제로 원할 것입니다.</p>
                 <p className={styles.subHeading}>검증 방법</p>
                 <p className={styles.text}>유사한 조건의 웨비나를 직접 기획하고, 실제 신청자 수를 집계했습니다.</p>
                 <div className={styles.highlight}>

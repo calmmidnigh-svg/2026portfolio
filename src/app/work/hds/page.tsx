@@ -43,7 +43,7 @@ export default function HDSPage() {
               <div className={styles.sectionContent}>
                 <p className={styles.subHeading}>도입 전 상황</p>
                 <p className={styles.text}>
-                  입사 당시 제품 개발은 러프한 기획안만을 기반으로 디자이너 없이 진행되고 있었다. 그 결과 다음과 같은 문제들이 복합적으로 발생하고 있었다.
+                  입사 당시 제품 개발은 러프한 기획안만을 기반으로 디자이너 없이 진행되고 있었습니다. 그 결과 다음과 같은 문제들이 복합적으로 발생하고 있었습니다.
                 </p>
                 <p className={styles.subHeading}>제품 품질 문제</p>
                 <ul className={styles.bullets}>
@@ -93,7 +93,7 @@ export default function HDSPage() {
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>1. 기반 토큰 설계</p>
                 <p className={styles.text}>
-                  화면 일관성의 근본 원인인 색상, 타이포, 간격을 먼저 정의했다.
+                  화면 일관성의 근본 원인인 색상, 타이포, 간격을 먼저 정의했습니다.
                 </p>
                 <ul className={styles.bullets}>
                   <li><strong>Color</strong> — Primary, Gray, Error, Warning, Success 시스템 정의. 임의 hex 사용 금지</li>
@@ -114,7 +114,7 @@ export default function HDSPage() {
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>2. 컴포넌트 설계 원칙</p>
                 <p className={styles.text}>
-                  기존 서비스의 가장 큰 문제였던 <strong>상태 피드백 부재</strong>를 해결하기 위해 모든 컴포넌트에 상태를 정의했다.
+                  기존 서비스의 가장 큰 문제였던 <strong>상태 피드백 부재</strong>를 해결하기 위해 모든 컴포넌트에 상태를 정의했습니다.
                 </p>
                 <ul className={styles.bullets}>
                   <li>default / hover / active / disabled / error 상태를 명확히 구분</li>
@@ -137,7 +137,7 @@ export default function HDSPage() {
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>3. 개발팀 설득 과정</p>
                 <p className={styles.text}>
-                  디자인 시스템에 생소한 팀원들에게 초반에는 업무 효율을 증명하기 어려웠다. 팀 내 이전 직장에서 디자인 시스템 경험이 있는 개발자와 함께 규칙을 하나씩 맞춰가며 작업 속도가 빨라지는 것을 팀 전체가 체감하도록 했다. 일방적인 강요가 아닌 함께 검증하는 방식으로 접근했고, 결과적으로 <strong>초반 사용률 0%에서 현재 80%로 끌어올렸다.</strong>
+                  디자인 시스템에 생소한 팀원들에게 초반에는 업무 효율을 증명하기 어려웠습니다. 팀 내 이전 직장에서 디자인 시스템 경험이 있는 개발자와 함께 규칙을 하나씩 맞춰가며 작업 속도가 빨라지는 것을 팀 전체가 체감하도록 했습니다. 일방적인 강요가 아닌 함께 검증하는 방식으로 접근했고, 결과적으로 <strong>초반 사용률 0%에서 현재 80%로 끌어올렸습니다.</strong>
                 </p>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function HDSPage() {
                   </tbody>
                 </table>
                 <p className={styles.subHeading}>개발팀 만족도 서베이 결과 (2026년 1월)</p>
-                <p className={styles.text}>개발팀 전원을 대상으로 디자인 시스템 만족도 서베이를 진행했다.</p>
+                <p className={styles.text}>개발팀 전원을 대상으로 디자인 시스템 만족도 서베이를 진행했습니다.</p>
                 <ul className={styles.bullets}>
                   <li>UI 개발 시간 30~40% 절감 (백현지 개발자)</li>
                   <li>UI 개발 시간 50% 절감 (김동원 개발자)</li>
@@ -189,7 +189,7 @@ export default function HDSPage() {
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
-                  디자인 시스템은 혼자 만드는 것이 아니라 함께 쓰게 만드는 것이 핵심이었다. 기술적 완성도보다 <strong>팀이 실제로 사용하게 하는 과정</strong>이 가장 어렵고 중요한 작업이었다.
+                  디자인 시스템은 혼자 만드는 것이 아니라 함께 쓰게 만드는 것이 핵심이었습니다. 기술적 완성도보다 <strong>팀이 실제로 사용하게 하는 과정</strong>이 가장 어렵고 중요한 작업이었습니다.
                 </p>
               </div>
             </div>
