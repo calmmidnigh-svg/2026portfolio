@@ -7,8 +7,8 @@ export default function Footer() {
       <div className={styles.inner}>
         <span>© 2026</span>
         <div className={styles.links}>
-          <a href="https://www.linkedin.com/in/yoonjeong-choi" target="_blank" rel="noreferrer">Linkedin</a>
-          <a href="https://vonnepetit.tistory.com" target="_blank" rel="noreferrer">Blog</a>
+          <a href="https://www.linkedin.com/in/%EC%9C%A4%EC%A0%95-%EC%B5%9C-3a9665380" target="_blank" rel="noreferrer">Linkedin</a>
+          <a href="https://yvonne-is-well.tistory.com/" target="_blank" rel="noreferrer">Blog</a>
           <Link href="/resume">Resume</Link>
         </div>
       </div>
