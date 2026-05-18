@@ -89,7 +89,7 @@ export default function ChatBot() {
         <button
           className={styles.sendBtn}
           onClick={() => send(input)}
-          disabled={loading || !input.trim()}
+          disabled={loading}
           aria-label="전송"
         >
           <Image src="/images/send.svg" alt="전송" width={24} height={24} />
