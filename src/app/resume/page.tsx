@@ -14,6 +14,20 @@ export default function ResumePage() {
           </div>
 
           <section className={styles.section}>
+            <h2 className={styles.sectionTitle}>Resume PDF</h2>
+            <div className={styles.pdfList}>
+              <div className={styles.pdfItem}>
+                <iframe src="/resume-1.pdf" className={styles.pdfViewer} title="이력서 1" />
+                <a href="/resume-1.pdf" download className={styles.downloadBtn}>다운로드</a>
+              </div>
+              <div className={styles.pdfItem}>
+                <iframe src="/resume-2.pdf" className={styles.pdfViewer} title="이력서 2" />
+                <a href="/resume-2.pdf" download className={styles.downloadBtn}>다운로드</a>
+              </div>
+            </div>
+          </section>
+
+          <section className={styles.section}>
             <h2 className={styles.sectionTitle}>Experience</h2>
 
             <div className={styles.item}>
