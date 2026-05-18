@@ -15,7 +15,7 @@ export default function Hero() {
             </p>
           </div>
           <div className={styles.links}>
-            <a href="https://www.linkedin.com/in/%EC%9C%A4%EC%A0%95-%EC%B5%9C-3a9665380/" target="_blank" rel="noreferrer" className={styles.link}>
+            <a href="https://www.linkedin.com/in/%EC%9C%A4%EC%A0%95-%EC%B5%9C-3a9665380" target="_blank" rel="noreferrer" className={styles.link}>
               <Image src="/images/Social Icons.svg" alt="LinkedIn" width={24} height={24} />
               Linkedin
             </a>
