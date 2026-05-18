@@ -64,7 +64,7 @@ export async function POST(req: NextRequest) {
     );
 
     const data = await res.json();
-    const reply = data.candidates?.[0]?.content?.parts?.[0]?.text ?? '답변을 생성하지 못했습니다.';
+    const reply = data.candidates?.[0]?.content?.parts?.[0]?.text ?? `답변을 생성하지 못했습니다. (${JSON.stringify(data.error ?? data.promptFeedback ?? '알 수 없는 오류')})`;
 
     return NextResponse.json({ reply });
   } catch {
