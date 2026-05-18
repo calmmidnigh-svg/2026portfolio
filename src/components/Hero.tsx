@@ -19,7 +19,7 @@ export default function Hero() {
               <Image src="/images/Social Icons.svg" alt="LinkedIn" width={24} height={24} />
               Linkedin
             </a>
-            <a href="https://vonnepetit.tistory.com" target="_blank" rel="noreferrer" className={styles.link}>
+            <a href="https://yvonne-is-well.tistory.com/" target="_blank" rel="noreferrer" className={styles.link}>
               <Image src="/images/sns_Default.svg" alt="Blog" width={24} height={24} />
               Blog
             </a>
