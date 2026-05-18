@@ -85,7 +85,7 @@ export default function UnretiredPage() {
             <div className={styles.gridItem} />
           </div>
 
-          {/* 작업과정 */}
+          {/* 작업과정 01, 02, 03 */}
           <div className={styles.body} style={{ paddingTop: 0, paddingBottom: 0 }}>
             <div className={styles.section}>
               <div className={styles.sectionSide}>
@@ -102,10 +102,7 @@ export default function UnretiredPage() {
                 <p className={styles.text}>같은 콘텐츠가 카테고리별로 다른 맥락에서 노출되어 콘텐츠의 순환이 일어나도록 했습니다.</p>
               </div>
             </div>
-          </div>
 
-          {/* 작업과정 02, 03 */}
-          <div className={styles.body} style={{ paddingTop: 0, paddingBottom: 0 }}>
             <div className={styles.section}>
               <div className={styles.sectionSide} />
               <div className={styles.sectionContent}>
