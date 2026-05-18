@@ -86,7 +86,7 @@ export default function UnretiredPage() {
           </div>
 
           {/* 작업과정 */}
-          <div className={styles.body} style={{ paddingTop: 0 }}>
+          <div className={styles.body} style={{ paddingTop: 0, paddingBottom: 0 }}>
             <div className={styles.section}>
               <div className={styles.sectionSide}>
                 <p className={styles.sectionLabel}>작업과정</p>
