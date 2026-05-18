@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './ProjectCard.module.scss';
 
 interface ProjectCardProps {
@@ -28,7 +29,7 @@ export default function ProjectCard({ title, tags, href }: ProjectCardProps) {
   );
 
   if (href) {
-    return <a href={href} target="_blank" rel="noreferrer">{inner}</a>;
+    return <Link href={href}>{inner}</Link>;
   }
 
   return inner;
