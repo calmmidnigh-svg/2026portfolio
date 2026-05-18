@@ -21,6 +21,7 @@ const PROJECTS = [
     title: 'AI VOC 대시보드',
     tags: ['AI', 'Vibe Coding'],
     image: '/images/voc.png',
+    href: '/work/voc',
   },
   {
     title: '지식 공유 강의 플랫폼',
