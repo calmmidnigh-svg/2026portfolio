@@ -15,6 +15,7 @@ const PROJECTS = [
     title: '디자인시스템 구축',
     tags: ['Design System', 'Solo'],
     image: '/images/hds.png',
+    href: '/work/hds',
   },
   {
     title: 'AI VOC 대시보드',
