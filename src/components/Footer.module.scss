@@ -1,0 +1,31 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--max-width);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.links {
+  display: flex;
+  gap: 12px;
+
+  a {
+    color: var(--color-secondary);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color-text);
+    }
+  }
+}
