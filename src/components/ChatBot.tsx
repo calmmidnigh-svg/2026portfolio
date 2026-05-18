@@ -92,7 +92,7 @@ export default function ChatBot() {
           disabled={loading || !input.trim()}
           aria-label="전송"
         >
-          <Image src="/send.svg" alt="전송" width={24} height={24} />
+          <Image src="/images/send.svg" alt="전송" width={24} height={24} />
         </button>
       </div>
     </div>
