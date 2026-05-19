@@ -8,7 +8,7 @@ const PROJECTS = [
   {
     title: 'HR전자계약서',
     tags: ['B2B SaaS', '헬로인사'],
-    image: '/images/hr-contract.png',
+    image: '/images/contract_main.png',
     href: '/work/hr-contract',
   },
   {
