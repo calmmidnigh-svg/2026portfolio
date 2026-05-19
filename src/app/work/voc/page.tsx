@@ -100,7 +100,7 @@ export default function VOCPage() {
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>1. 데이터 파악</p>
                 <p className={styles.text}>
-                  Rocket.Chat에 쌓여 있는 VOC 채널의 전체 대화 데이터를 추출했습니다. 2025년 11월부터 실제 VOC를 직접 확인하며 데이터의 성격과 패턴을 파악했습니다.
+                  내부 채팅에 쌓여 있는 VOC 채널의 전체 대화 데이터를 추출했습니다. 2025년 11월부터 실제 VOC를 직접 확인하며 데이터의 성격과 패턴을 파악했습니다.
                 </p>
               </div>
             </div>
