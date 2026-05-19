@@ -20,13 +20,13 @@ const PROJECTS = [
   {
     title: 'AI VOC 대시보드',
     tags: ['AI', 'Vibe Coding'],
-    image: '/images/voc.png',
+    image: '/images/voc1.png',
     href: '/work/voc',
   },
   {
     title: '지식 공유 강의 플랫폼',
     tags: ['Side Project', 'UX Research'],
-    image: '/images/unretired.png',
+    image: '/images/unretired1.png',
     href: '/work/unretired',
   },
 ];
