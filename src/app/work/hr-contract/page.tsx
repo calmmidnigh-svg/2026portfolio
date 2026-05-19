@@ -25,7 +25,7 @@ export default function HRContractPage() {
         </div>
 
         {/* Hero — 실제 제품 스크린샷 */}
-        <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative' }}>
+        <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
           <Image src="/images/contract_main.png" alt="HR전자계약서 화면" fill style={{ objectFit: 'cover' }} quality={100} />
         </div>
 
