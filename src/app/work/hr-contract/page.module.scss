@@ -166,6 +166,7 @@
   font-weight: 400;
   color: #222;
   line-height: 1.5;
+  word-break: keep-all;
 }
 
 .bullets {
@@ -180,6 +181,7 @@
     color: #222;
     line-height: 1.5;
     list-style: disc;
+    word-break: keep-all;
   }
 }
 
@@ -223,4 +225,5 @@
   font-weight: 500;
   color: #222;
   line-height: 1.5;
+  word-break: keep-all;
 }
