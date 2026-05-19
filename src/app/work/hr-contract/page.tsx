@@ -101,7 +101,9 @@ export default function HRContractPage() {
           </div>
 
           {/* 이미지 */}
-          <div className={styles.imageFull} />
+          <div className={styles.imageFull}>
+            <Image src="/images/contract3.png" alt="HR전자계약서 작업 화면 3" width={4171} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+          </div>
 
           {/* 작업과정 02 */}
           <div className={styles.body} style={{ paddingTop: 0, paddingBottom: 0 }}>
@@ -120,7 +122,9 @@ export default function HRContractPage() {
           </div>
 
           {/* 이미지 */}
-          <div className={styles.imageFull} />
+          <div className={styles.imageFull}>
+            <Image src="/images/contract4.png" alt="HR전자계약서 작업 화면 4" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+          </div>
 
           {/* 작업과정 03 + 결과 + 회고 */}
           <div className={styles.body}>
