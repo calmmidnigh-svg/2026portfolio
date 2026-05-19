@@ -82,7 +82,7 @@ export default function HRContractPage() {
 
           {/* 이미지 */}
           <div className={styles.imageFull} style={{ position: 'relative' }}>
-            <Image src="/images/contract2.png" alt="HR전자계약서 작업 화면" fill style={{ objectFit: 'cover' }} unoptimized />
+            <Image src="/images/contract2.png" alt="HR전자계약서 작업 화면" fill style={{ objectFit: 'contain' }} unoptimized />
           </div>
 
           {/* 작업과정 01 */}
