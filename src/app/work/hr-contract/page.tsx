@@ -86,7 +86,7 @@ export default function HRContractPage() {
               <Image src="/images/contract-2-1.png" alt="HR전자계약서 화면 1" fill style={{ objectFit: 'cover' }} unoptimized />
             </div>
             <div className={styles.gridItem} style={{ position: 'relative', background: '#f5f5f5' }}>
-              <Image src="/images/contract-2-2.png" alt="HR전자계약서 화면 2" fill style={{ objectFit: 'contain', padding: '16px' }} unoptimized />
+              <Image src="/images/contract-2-2.png" alt="HR전자계약서 화면 2" fill style={{ objectFit: 'contain', padding: '16px', objectPosition: '30% center' }} unoptimized />
             </div>
             <div className={styles.gridItem} style={{ position: 'relative' }}>
               <Image src="/images/contract-2-3.png" alt="HR전자계약서 화면 3" fill style={{ objectFit: 'cover' }} unoptimized />
