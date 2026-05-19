@@ -73,11 +73,11 @@ export default function VOCPage() {
 
           {/* 이미지 그리드 */}
           <div className={styles.imageGrid}>
-            <div className={styles.gridItem} style={{ background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
-              <Image src="/images/voc2-1.png" alt="VOC 배경 1" width={1320} height={795} style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.12)' }} unoptimized />
+            <div className={styles.gridItem} style={{ position: 'relative' }}>
+              <Image src="/images/voc2-1.png" alt="VOC 배경 1" fill style={{ objectFit: 'cover' }} unoptimized />
             </div>
-            <div className={styles.gridItem} style={{ background: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
-              <Image src="/images/voc2-2.png" alt="VOC 배경 2" width={1320} height={795} style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.12)' }} unoptimized />
+            <div className={styles.gridItem} style={{ position: 'relative', background: '#f5f5f5' }}>
+              <Image src="/images/voc2-2.png" alt="VOC 배경 2" fill style={{ objectFit: 'cover' }} unoptimized />
             </div>
             <div className={styles.gridItem} style={{ background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
               <video
