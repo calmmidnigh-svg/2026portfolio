@@ -13,7 +13,7 @@ const PROJECTS = [
   },
   {
     title: '디자인시스템 구축',
-    tags: ['Design System', 'Solo'],
+    tags: ['Design System'],
     image: '/images/hds1.png',
     href: '/work/hds',
   },
