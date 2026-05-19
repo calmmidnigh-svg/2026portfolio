@@ -29,22 +29,17 @@ export default function FloatingChat() {
         </>
       )}
 
-      <button
-        className={styles.fab}
-        onClick={() => setIsOpen(prev => !prev)}
-        aria-label="채팅 열기"
-      >
-        {isOpen ? (
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        ) : (
+      {!isOpen && (
+        <button
+          className={styles.fab}
+          onClick={() => setIsOpen(true)}
+          aria-label="채팅 열기"
+        >
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
           </svg>
-        )}
-      </button>
+        </button>
+      )}
     </div>
   );
 }
