@@ -69,7 +69,10 @@ export default function HRContractPage() {
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>태그 추상화 시스템</p>
                 <p className={styles.text}>복잡성을 해결하기 위해 태그 기반 추상화 방식을 설계했습니다.</p>
-                <div className={styles.codeBlock}>{`계약서 작성 시  →  태그만 표시\n실제 출력 시    →  태그가 디테일 내용으로 자동 치환`}</div>
+                <div className={styles.codeBlock}>
+                  <div className={styles.codeRow}><span>계약서 작성 시</span><span>→</span><span>태그만 표시</span></div>
+                  <div className={styles.codeRow}><span>실제 출력 시</span><span>→</span><span>태그가 디테일 내용으로 자동 치환</span></div>
+                </div>
                 <ul className={styles.bullets}>
                   <li>관리자가 태그를 정의하고 각 태그에 세부 내용을 연동</li>
                   <li>작성 시 태그만 삽입 — 복잡한 내용을 직접 입력하지 않아도 됨</li>

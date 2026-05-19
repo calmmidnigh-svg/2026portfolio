@@ -191,8 +191,14 @@
   font-weight: 400;
   color: #222;
   line-height: 1.5;
-  white-space: pre;
   font-family: 'Menlo', 'Monaco', monospace;
+}
+
+.codeRow {
+  display: grid;
+  grid-template-columns: 7.5em 1.5em 1fr;
+  gap: 0 8px;
+  line-height: 1.8;
 }
 
 .highlight {
