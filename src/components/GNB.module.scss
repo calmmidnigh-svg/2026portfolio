@@ -54,3 +54,9 @@
     background: rgba(255, 255, 255, 0.5);
   }
 }
+
+@media (max-width: 767px) {
+  .navItem {
+    padding: 10px 16px;
+  }
+}

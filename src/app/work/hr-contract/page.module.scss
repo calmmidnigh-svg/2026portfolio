@@ -227,3 +227,91 @@
   line-height: 1.5;
   word-break: keep-all;
 }
+
+@media (max-width: 767px) {
+  .header {
+    padding: 48px 20px 40px;
+    gap: 8px;
+  }
+
+  .meta {
+    padding-top: 16px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .body {
+    padding: 40px 0;
+    gap: 36px;
+  }
+
+  .section {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .sectionSide {
+    width: auto;
+    padding-top: 0;
+  }
+
+  .imageGrid {
+    grid-template-columns: 1fr;
+    height: auto;
+    border-radius: 8px;
+
+    .gridItem {
+      height: 220px;
+      position: relative;
+    }
+  }
+
+  .imageFull {
+    border-radius: 8px;
+  }
+
+  .overviewTable td {
+    font-size: 14px;
+  }
+
+  .text,
+  .bullets li {
+    font-size: 15px;
+  }
+
+  .sectionTitle,
+  .subHeading {
+    font-size: 15px;
+  }
+
+  .sectionLabel {
+    font-size: 14px;
+  }
+
+  .codeBlock {
+    font-size: 13px;
+    padding: 14px 16px;
+  }
+
+  .codeRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 6px;
+    grid-template-columns: none;
+  }
+
+  .highlight {
+    padding: 16px 20px;
+  }
+
+  .highlightText {
+    font-size: 15px;
+  }
+}
