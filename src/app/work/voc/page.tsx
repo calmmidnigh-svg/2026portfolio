@@ -107,7 +107,16 @@ export default function VOCPage() {
           </div>
 
           {/* 이미지 */}
-          <div className={styles.imageFull} />
+          <div className={styles.imageFull} style={{ overflow: 'hidden', borderRadius: '12px' }}>
+            <video
+              src="/images/voc3.mov"
+              autoPlay
+              muted
+              loop
+              playsInline
+              style={{ width: '100%', height: 'auto', display: 'block' }}
+            />
+          </div>
 
           {/* 작업과정 02 */}
           <div className={styles.body} style={{ paddingTop: 0, paddingBottom: 0 }}>
