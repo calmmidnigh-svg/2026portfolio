@@ -80,17 +80,9 @@ export default function HRContractPage() {
 
           </div>
 
-          {/* 이미지 그리드 */}
-          <div className={styles.imageGrid}>
-            <div className={styles.gridItem} style={{ position: 'relative' }}>
-              <Image src="/images/contract-2-1.png" alt="HR전자계약서 화면 1" fill style={{ objectFit: 'cover' }} unoptimized />
-            </div>
-            <div className={styles.gridItem} style={{ position: 'relative', background: '#f5f5f5' }}>
-              <Image src="/images/contract-2-2.png" alt="HR전자계약서 화면 2" fill style={{ objectFit: 'contain', padding: '16px', objectPosition: '30% center' }} unoptimized />
-            </div>
-            <div className={styles.gridItem} style={{ position: 'relative' }}>
-              <Image src="/images/contract-2-3.png" alt="HR전자계약서 화면 3" fill style={{ objectFit: 'cover' }} unoptimized />
-            </div>
+          {/* 이미지 */}
+          <div className={styles.imageFull} style={{ position: 'relative' }}>
+            <Image src="/images/contract2.png" alt="HR전자계약서 작업 화면" fill style={{ objectFit: 'cover' }} unoptimized />
           </div>
 
           {/* 작업과정 01 */}
