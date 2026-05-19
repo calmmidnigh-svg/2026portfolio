@@ -79,14 +79,14 @@ export default function VOCPage() {
             <div className={styles.gridItem} style={{ position: 'relative', background: '#f5f5f5' }}>
               <Image src="/images/voc2-2.png" alt="VOC 배경 2" fill style={{ objectFit: 'contain' }} unoptimized />
             </div>
-            <div className={styles.gridItem} style={{ background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+            <div className={styles.gridItem} style={{ background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '32px' }}>
               <video
                 src="/images/voc2-3.mov"
                 autoPlay
                 muted
                 loop
                 playsInline
-                style={{ height: '100%', maxHeight: '100%', width: 'auto', borderRadius: '12px', boxShadow: '0 0 10px rgba(0,0,0,0.1)' }}
+                style={{ width: '100%', height: 'auto', borderRadius: '12px', boxShadow: '0 0 10px rgba(0,0,0,0.1)' }}
               />
             </div>
           </div>
