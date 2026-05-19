@@ -118,6 +118,10 @@
     gap: 32px;
   }
 
+  .right {
+    display: none;
+  }
+
   .name { font-size: 22px; }
   .desc { font-size: 15px; word-break: keep-all; }
 }

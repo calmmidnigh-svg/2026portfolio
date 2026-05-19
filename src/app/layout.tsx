@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import FloatingChat from '@/components/FloatingChat';
 import './globals.scss';
 
 export const metadata: Metadata = {
@@ -9,7 +10,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      <body>
+        {children}
+        <FloatingChat />
+      </body>
     </html>
   );
 }

@@ -1,0 +1,99 @@
+.wrapper {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.fab {
+  position: fixed;
+  bottom: 24px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 100px;
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  z-index: 200;
+  transition: background 0.2s, transform 0.2s;
+
+  &:hover {
+    background: #000;
+    transform: scale(1.05);
+  }
+
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 199;
+}
+
+.sheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: #fefefe;
+  border-radius: 20px 20px 0 0;
+  padding: 0 0 24px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.sheetHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid #eee;
+  flex-shrink: 0;
+}
+
+.sheetTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.closeBtn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: background 0.15s;
+
+  &:hover {
+    background: #f0f0f0;
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.sheetBody {
+  flex: 1;
+  overflow: hidden;
+  padding: 16px 20px 0;
+  display: flex;
+  flex-direction: column;
+}
