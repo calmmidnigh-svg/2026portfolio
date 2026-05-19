@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import GNB from '@/components/GNB';
 import Footer from '@/components/Footer';
 import styles from '../hr-contract/page.module.scss';
@@ -24,10 +25,8 @@ export default function HDSPage() {
         </div>
 
         {/* Hero — 실제 이미지 영역 */}
-        <div className={styles.imageFull} style={{ overflow: 'hidden' }}>
-          <div style={{ width: '100%', height: '100%', background: '#f0f0f0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <span style={{ color: '#999', fontSize: '14px' }}>HDS 대표 이미지</span>
-          </div>
+        <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
+          <Image src="/images/hds1.png" alt="HDS 디자인 시스템" fill style={{ objectFit: 'cover' }} unoptimized />
         </div>
 
         <div className={styles.container}>
@@ -77,11 +76,9 @@ export default function HDSPage() {
 
           </div>
 
-          {/* 이미지 그리드 */}
-          <div className={styles.imageGrid}>
-            <div className={styles.gridItem} />
-            <div className={styles.gridItem} />
-            <div className={styles.gridItem} />
+          {/* 이미지 */}
+          <div className={styles.imageFull}>
+            <Image src="/images/hds2.png" alt="HDS 디자인 시스템 2" width={4096} height={1916} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
           {/* 작업과정 */}
@@ -105,7 +102,9 @@ export default function HDSPage() {
           </div>
 
           {/* 이미지 */}
-          <div className={styles.imageFull} />
+          <div className={styles.imageFull}>
+            <Image src="/images/hds3.png" alt="HDS 디자인 시스템 3" width={4009} height={2979} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+          </div>
 
           {/* 작업과정 02 */}
           <div className={styles.body} style={{ paddingTop: 0, paddingBottom: 0 }}>
@@ -128,7 +127,9 @@ export default function HDSPage() {
           </div>
 
           {/* 이미지 */}
-          <div className={styles.imageFull} />
+          <div className={styles.imageFull}>
+            <Image src="/images/hds4.png" alt="HDS 디자인 시스템 4" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+          </div>
 
           {/* 작업과정 03 + 결과 + 회고 */}
           <div className={styles.body}>
