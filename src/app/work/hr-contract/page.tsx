@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import GNB from '@/components/GNB';
 import Footer from '@/components/Footer';
 import styles from './page.module.scss';
@@ -24,8 +25,8 @@ export default function HRContractPage() {
         </div>
 
         {/* Hero — 실제 제품 스크린샷 */}
-        <div className={styles.imageFull} style={{ overflow: 'hidden' }}>
-          <img src="/images/contract_main.png" alt="HR전자계약서 화면" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+        <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative' }}>
+          <Image src="/images/contract_main.png" alt="HR전자계약서 화면" fill style={{ objectFit: 'cover' }} quality={100} />
         </div>
 
         <div className={styles.container}>
@@ -81,14 +82,14 @@ export default function HRContractPage() {
 
           {/* 이미지 그리드 */}
           <div className={styles.imageGrid}>
-            <div className={styles.gridItem}>
-              <img src="/images/contract-2-1.png" alt="HR전자계약서 화면 1" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            <div className={styles.gridItem} style={{ position: 'relative' }}>
+              <Image src="/images/contract-2-1.png" alt="HR전자계약서 화면 1" fill style={{ objectFit: 'contain' }} quality={100} />
             </div>
-            <div className={styles.gridItem}>
-              <img src="/images/contract-2-2.png" alt="HR전자계약서 화면 2" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            <div className={styles.gridItem} style={{ position: 'relative' }}>
+              <Image src="/images/contract-2-2.png" alt="HR전자계약서 화면 2" fill style={{ objectFit: 'contain' }} quality={100} />
             </div>
-            <div className={styles.gridItem}>
-              <img src="/images/contract-2-3.png" alt="HR전자계약서 화면 3" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            <div className={styles.gridItem} style={{ position: 'relative' }}>
+              <Image src="/images/contract-2-3.png" alt="HR전자계약서 화면 3" fill style={{ objectFit: 'contain' }} quality={100} />
             </div>
           </div>
 
