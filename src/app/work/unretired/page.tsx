@@ -53,6 +53,17 @@ export default function UnretiredPage() {
               </div>
             </div>
 
+          </div>
+        </div>
+
+        {/* 이미지 */}
+        <div className={styles.imageFull}>
+          <Image src="/images/unretired3.png" alt="언리타이얼드 작업 화면 3" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+        </div>
+
+        <div className={styles.container}>
+          <div className={styles.body}>
+
             {/* 수요 검증 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
@@ -124,11 +135,6 @@ export default function UnretiredPage() {
                 <p className={styles.text}>전체 화면을 라이트 모드로 전환하고, 폰트 크기도 기본보다 크게 조정했습니다.</p>
               </div>
             </div>
-          </div>
-
-          {/* 이미지 */}
-          <div className={styles.imageFull}>
-            <Image src="/images/unretired3.png" alt="언리타이얼드 작업 화면 3" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
           {/* 이미지 */}
