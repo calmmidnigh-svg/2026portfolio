@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import GNB from '@/components/GNB';
 import Footer from '@/components/Footer';
 import styles from '../hr-contract/page.module.scss';
@@ -24,10 +25,8 @@ export default function UnretiredPage() {
         </div>
 
         {/* Hero — 이미지 영역 */}
-        <div className={styles.imageFull} style={{ overflow: 'hidden' }}>
-          <div style={{ width: '100%', height: '100%', background: '#f0f0f0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <span style={{ color: '#999', fontSize: '14px' }}>언리타이얼드 대표 이미지</span>
-          </div>
+        <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
+          <Image src="/images/unretired1.png" alt="언리타이얼드" fill style={{ objectFit: 'cover' }} unoptimized />
         </div>
 
         <div className={styles.container}>
@@ -78,11 +77,9 @@ export default function UnretiredPage() {
 
           </div>
 
-          {/* 이미지 그리드 */}
-          <div className={styles.imageGrid}>
-            <div className={styles.gridItem} />
-            <div className={styles.gridItem} />
-            <div className={styles.gridItem} />
+          {/* 이미지 */}
+          <div className={styles.imageFull}>
+            <Image src="/images/unretired2.png" alt="언리타이얼드 작업 화면 2" width={4096} height={1916} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
           {/* 작업과정 01, 02, 03 */}
@@ -130,7 +127,14 @@ export default function UnretiredPage() {
           </div>
 
           {/* 이미지 */}
-          <div className={styles.imageFull} />
+          <div className={styles.imageFull}>
+            <Image src="/images/unretired3.png" alt="언리타이얼드 작업 화면 3" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+          </div>
+
+          {/* 이미지 */}
+          <div className={styles.imageFull}>
+            <Image src="/images/unretired4.png" alt="언리타이얼드 작업 화면 4" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+          </div>
 
           {/* 결과 + 회고 */}
           <div className={styles.body}>
