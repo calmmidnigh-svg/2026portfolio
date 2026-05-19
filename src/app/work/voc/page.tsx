@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import GNB from '@/components/GNB';
 import Footer from '@/components/Footer';
 import styles from '../hr-contract/page.module.scss';
@@ -25,10 +26,8 @@ export default function VOCPage() {
         </div>
 
         {/* Hero — 이미지 영역 */}
-        <div className={styles.imageFull} style={{ overflow: 'hidden' }}>
-          <div style={{ width: '100%', height: '100%', background: '#f0f0f0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <span style={{ color: '#999', fontSize: '14px' }}>VOC 대시보드 대표 이미지</span>
-          </div>
+        <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
+          <Image src="/images/voc1.png" alt="AI VOC 대시보드" fill style={{ objectFit: 'cover' }} unoptimized />
         </div>
 
         <div className={styles.container}>
