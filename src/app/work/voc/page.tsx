@@ -73,9 +73,22 @@ export default function VOCPage() {
 
           {/* 이미지 그리드 */}
           <div className={styles.imageGrid}>
-            <div className={styles.gridItem} />
-            <div className={styles.gridItem} />
-            <div className={styles.gridItem} />
+            <div className={styles.gridItem} style={{ position: 'relative' }}>
+              <Image src="/images/voc2-1.png" alt="VOC 배경 1" fill style={{ objectFit: 'cover' }} unoptimized />
+            </div>
+            <div className={styles.gridItem} style={{ position: 'relative' }}>
+              <Image src="/images/voc2-2.png" alt="VOC 배경 2" fill style={{ objectFit: 'cover' }} unoptimized />
+            </div>
+            <div className={styles.gridItem} style={{ position: 'relative', overflow: 'hidden' }}>
+              <video
+                src="/images/voc2-3.mov"
+                autoPlay
+                muted
+                loop
+                playsInline
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+            </div>
           </div>
 
           {/* 작업과정 01 */}
