@@ -14,7 +14,7 @@ export default function UnretiredPage() {
         <div className={styles.header}>
           <Link href="/" className={styles.back}>← 전체 작업</Link>
           <p className={styles.meta}>Side Project · UX Research · Product Designer</p>
-          <h1 className={styles.title}>언리타이얼드</h1>
+          <h1 className={styles.title}>지식 공유 강의 플랫폼</h1>
           <table className={styles.overviewTable}>
             <tbody>
               <tr><td>역할</td><td>서비스 기획 및 UX 설계, 핵심 화면 설계</td></tr>
