@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   description: '프로덕트 디자이너 최윤정의 포트폴리오입니다.',
 };
 
+
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
