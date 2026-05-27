@@ -12,7 +12,10 @@ export default function HDSPage() {
 
         {/* Header */}
         <div className={styles.header}>
-          <Link href="/" className={styles.back}>← 전체 작업</Link>
+          <div className={styles.headerNav}>
+            <Link href="/" className={styles.back}>← 전체 작업</Link>
+            <Link href="/work/unretired" className={styles.nextLink}>지식 공유 강의 플랫폼 →</Link>
+          </div>
           <p className={styles.meta}>Design System · 헬로인사 · Product Designer</p>
           <h1 className={styles.title}>HDS 디자인 시스템 구축</h1>
         </div>
@@ -212,6 +215,10 @@ export default function HDSPage() {
             </div>
           </div>
 
+        </div>
+        <div className={styles.nextProjectSection}>
+          <p className={styles.nextProjectLabel}>다음 프로젝트</p>
+          <Link href="/work/unretired" className={styles.nextProjectTitle}>지식 공유 강의 플랫폼 →</Link>
         </div>
       </div>
       <Footer />

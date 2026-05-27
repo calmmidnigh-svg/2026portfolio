@@ -26,7 +26,10 @@ export default function HRContractPage() {
 
         {/* Header */}
         <div className={styles.header}>
-          <Link href="/" className={styles.back}>← 전체 작업</Link>
+          <div className={styles.headerNav}>
+            <Link href="/" className={styles.back}>← 전체 작업</Link>
+            <Link href="/work/voc" className={styles.nextLink}>AI VOC 대시보드 →</Link>
+          </div>
           <p className={styles.meta}>B2B SaaS · 헬로인사 · Product Designer</p>
           <h1 className={styles.title}>HR전자계약서</h1>
         </div>
@@ -197,6 +200,10 @@ export default function HRContractPage() {
             </div>
           </div>
 
+        </div>
+        <div className={styles.nextProjectSection}>
+          <p className={styles.nextProjectLabel}>다음 프로젝트</p>
+          <Link href="/work/voc" className={styles.nextProjectTitle}>AI VOC 대시보드 →</Link>
         </div>
       </div>
       <Footer />

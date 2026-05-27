@@ -12,7 +12,10 @@ export default function VOCPage() {
 
         {/* Header */}
         <div className={styles.header}>
-          <Link href="/" className={styles.back}>← 전체 작업</Link>
+          <div className={styles.headerNav}>
+            <Link href="/" className={styles.back}>← 전체 작업</Link>
+            <Link href="/work/hds" className={styles.nextLink}>디자인시스템 구축 →</Link>
+          </div>
           <p className={styles.meta}>AI · Vibe Coding · Product Designer</p>
           <h1 className={styles.title}>AI VOC 대시보드</h1>
         </div>
@@ -202,6 +205,10 @@ export default function VOCPage() {
             </div>
           </div>
 
+        </div>
+        <div className={styles.nextProjectSection}>
+          <p className={styles.nextProjectLabel}>다음 프로젝트</p>
+          <Link href="/work/hds" className={styles.nextProjectTitle}>디자인시스템 구축 →</Link>
         </div>
       </div>
       <Footer />

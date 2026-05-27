@@ -12,7 +12,10 @@ export default function UnretiredPage() {
 
         {/* Header */}
         <div className={styles.header}>
-          <Link href="/" className={styles.back}>← 전체 작업</Link>
+          <div className={styles.headerNav}>
+            <Link href="/" className={styles.back}>← 전체 작업</Link>
+            <Link href="/work/hr-contract" className={styles.nextLink}>HR전자계약서 →</Link>
+          </div>
           <p className={styles.meta}>Side Project · UX Research · Product Designer</p>
           <h1 className={styles.title}>지식 공유 강의 플랫폼</h1>
         </div>
@@ -205,6 +208,10 @@ export default function UnretiredPage() {
             </div>
           </div>
 
+        </div>
+        <div className={styles.nextProjectSection}>
+          <p className={styles.nextProjectLabel}>다음 프로젝트</p>
+          <Link href="/work/hr-contract" className={styles.nextProjectTitle}>HR전자계약서 →</Link>
         </div>
       </div>
       <Footer />
