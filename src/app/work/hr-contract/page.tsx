@@ -131,16 +131,6 @@ export default function HRContractPage() {
 
           {/* 작업과정 03 + 결과 + 회고 */}
           <div className={styles.body}>
-            <div className={styles.section}>
-              <div className={styles.sectionSide} />
-              <div className={styles.sectionContent}>
-                <p className={styles.sectionTitle}>HDS 적용</p>
-                <p className={styles.text}>
-                  설계된 화면에 HDS 컴포넌트를 적용해 일관된 UI로 구현했습니다. 디자인 시스템이 있었기에 화면 수가 많아도 빠르게 완성도를 높일 수 있었습니다.
-                </p>
-              </div>
-            </div>
-
             {/* 결과 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
