@@ -93,24 +93,26 @@ export default function ChatBot() {
         </div>
       )}
 
-      <div className={styles.inputArea}>
-        <input
-          className={styles.input}
-          placeholder="저에대해 궁금한점을 물어보세요. ☺️"
-          value={input}
-          onChange={e => setInput(e.target.value)}
-          onKeyDown={handleKeyDown}
-        />
-        <button
-          className={styles.sendBtn}
-          onClick={() => send(input)}
-          disabled={loading}
-          aria-label="전송"
-        >
-          <Image src="/images/send.svg" alt="전송" width={24} height={24} />
-        </button>
+      <div className={styles.inputWrapper}>
+        <div className={styles.inputArea}>
+          <input
+            className={styles.input}
+            placeholder="저에대해 궁금한점을 물어보세요. ☺️"
+            value={input}
+            onChange={e => setInput(e.target.value)}
+            onKeyDown={handleKeyDown}
+          />
+          <button
+            className={styles.sendBtn}
+            onClick={() => send(input)}
+            disabled={loading}
+            aria-label="전송"
+          >
+            <Image src="/images/send.svg" alt="전송" width={24} height={24} />
+          </button>
+        </div>
+        <p className={styles.disclaimer}>해당 답변은 제가 학습 시킨 정보 기반 AI가 답변해주고 있어요!</p>
       </div>
-      <p className={styles.disclaimer}>해당 답변은 제가 학습 시킨 정보 기반 AI가 답변해주고 있어요!</p>
     </div>
   );
 }
