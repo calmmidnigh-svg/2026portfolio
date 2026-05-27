@@ -10,24 +10,48 @@ const PROJECTS = [
     tags: ['B2B SaaS', '헬로인사'],
     image: '/images/contract_main.png',
     href: '/work/hr-contract',
+    overview: {
+      project: 'B2B SaaS · 헬로인사',
+      output: 'Web',
+      role: 'Product Designer / 100%',
+      period: '2025',
+    },
   },
   {
     title: '디자인시스템 구축',
     tags: ['Design System'],
     image: '/images/hds1.png',
     href: '/work/hds',
+    overview: {
+      project: 'Design System · 헬로인사',
+      output: 'Figma',
+      role: 'Product Designer / 100%',
+      period: '2025 ~ 현재',
+    },
   },
   {
     title: 'AI VOC 대시보드',
     tags: ['AI', 'Vibe Coding'],
     image: '/images/voc1.png',
     href: '/work/voc',
+    overview: {
+      project: 'AI · 헬로인사',
+      output: 'Web',
+      role: 'Product Designer / 100%',
+      period: '2025.11 ~',
+    },
   },
   {
     title: '지식 공유 강의 플랫폼',
     tags: ['Side Project', 'UX Research'],
     image: '/images/unretired1.png',
     href: '/work/unretired',
+    overview: {
+      project: 'Side Project',
+      output: 'iOS · Android · Web',
+      role: 'Product Designer / 100%',
+      period: '2024.12 ~ 2025.07',
+    },
   },
 ];
 

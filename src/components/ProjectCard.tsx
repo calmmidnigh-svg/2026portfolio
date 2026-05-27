@@ -2,14 +2,22 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './ProjectCard.module.scss';
 
+type OverviewType = {
+  project: string;
+  output: string;
+  role: string;
+  period: string;
+};
+
 interface ProjectCardProps {
   title: string;
   tags: string[];
   image?: string;
   href?: string;
+  overview?: OverviewType;
 }
 
-export default function ProjectCard({ title, tags, image, href }: ProjectCardProps) {
+export default function ProjectCard({ title, image, href, overview }: ProjectCardProps) {
   const inner = (
     <div className={styles.card}>
       <div className={styles.thumbnail}>
@@ -21,14 +29,28 @@ export default function ProjectCard({ title, tags, image, href }: ProjectCardPro
       </div>
       <div className={styles.info}>
         <p className={styles.title}>{title}</p>
-        <div className={styles.tags}>
-          {tags.map((tag, i) => (
-            <span key={i} className={styles.tag}>
-              {i > 0 && '· '}
-              {tag}
-            </span>
-          ))}
-        </div>
+        {overview && (
+          <table className={styles.overview}>
+            <tbody>
+              <tr>
+                <td className={styles.overviewLabel}>Project</td>
+                <td className={styles.overviewValue}>{overview.project}</td>
+              </tr>
+              <tr>
+                <td className={styles.overviewLabel}>Output</td>
+                <td className={styles.overviewValue}>{overview.output}</td>
+              </tr>
+              <tr>
+                <td className={styles.overviewLabel}>Role</td>
+                <td className={styles.overviewValue}>{overview.role}</td>
+              </tr>
+              <tr>
+                <td className={styles.overviewLabel}>Period</td>
+                <td className={styles.overviewValue}>{overview.period}</td>
+              </tr>
+            </tbody>
+          </table>
+        )}
       </div>
     </div>
   );

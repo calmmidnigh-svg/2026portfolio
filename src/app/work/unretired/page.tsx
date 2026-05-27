@@ -25,9 +25,10 @@ export default function UnretiredPage() {
         <div className={styles.header} style={{ paddingTop: 0 }}>
           <table className={styles.overviewTable}>
             <tbody>
-              <tr><td>역할</td><td>서비스 기획 및 UX 설계, 핵심 화면 설계</td></tr>
-              <tr><td>기간</td><td>2024.12 ~ 2025.07</td></tr>
-              <tr><td>결과물</td><td>iOS / Android 앱, 웹 어드민</td></tr>
+              <tr><td>Project</td><td>Side Project</td></tr>
+              <tr><td>Output</td><td>iOS · Android · Web</td></tr>
+              <tr><td>Role</td><td>Product Designer / 100%</td></tr>
+              <tr><td>Period</td><td>2024.12 ~ 2025.07</td></tr>
             </tbody>
           </table>
         </div>

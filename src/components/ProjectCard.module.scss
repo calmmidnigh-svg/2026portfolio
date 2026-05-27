@@ -47,15 +47,24 @@
   line-height: 1.5;
 }
 
-.tags {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+.overview {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 4px;
 }
 
-.tag {
-  font-size: 14px;
-  font-weight: 500;
+.overviewLabel {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text);
+  padding: 3px 16px 3px 0;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.overviewValue {
+  font-size: 13px;
+  font-weight: 400;
   color: var(--color-secondary);
-  line-height: 1.5;
+  padding: 3px 0;
 }

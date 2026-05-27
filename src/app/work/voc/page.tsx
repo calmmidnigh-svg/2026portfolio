@@ -25,10 +25,10 @@ export default function VOCPage() {
         <div className={styles.header} style={{ paddingTop: 0 }}>
           <table className={styles.overviewTable}>
             <tbody>
-              <tr><td>역할</td><td>문제 발굴 + 설계 + 구현 (1인)</td></tr>
-              <tr><td>성격</td><td>자발적 시작 프로젝트</td></tr>
-              <tr><td>상태</td><td>내부 검증 중</td></tr>
-              <tr><td>기술</td><td>채팅 API + Gemini AI + 대시보드</td></tr>
+              <tr><td>Project</td><td>AI Dashboard · 헬로인사</td></tr>
+              <tr><td>Output</td><td>Web</td></tr>
+              <tr><td>Role</td><td>Product Designer / 100%</td></tr>
+              <tr><td>Period</td><td>2025.11 ~</td></tr>
             </tbody>
           </table>
         </div>

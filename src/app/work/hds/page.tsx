@@ -25,9 +25,10 @@ export default function HDSPage() {
         <div className={styles.header} style={{ paddingTop: 0 }}>
           <table className={styles.overviewTable}>
             <tbody>
-              <tr><td>역할</td><td>프로덕트 디자이너 (1인 구축)</td></tr>
-              <tr><td>상태</td><td>운영 중</td></tr>
-              <tr><td>기간</td><td>2025 ~ 현재</td></tr>
+              <tr><td>Project</td><td>Design System · 헬로인사</td></tr>
+              <tr><td>Output</td><td>Figma</td></tr>
+              <tr><td>Role</td><td>Product Designer / 100%</td></tr>
+              <tr><td>Period</td><td>2025 ~ 현재</td></tr>
             </tbody>
           </table>
         </div>

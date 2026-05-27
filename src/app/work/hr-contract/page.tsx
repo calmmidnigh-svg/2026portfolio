@@ -25,9 +25,10 @@ export default function HRContractPage() {
         <div className={styles.header} style={{ paddingTop: 0 }}>
           <table className={styles.overviewTable}>
             <tbody>
-              <tr><td>역할</td><td>전체 플로우 설계 + 화면 디자인 + 정책 설계</td></tr>
-              <tr><td>상태</td><td>출시 완료</td></tr>
-              <tr><td>기간</td><td>디자인 시스템 적용 후 6개월 내 출시</td></tr>
+              <tr><td>Project</td><td>B2B SaaS · 헬로인사</td></tr>
+              <tr><td>Output</td><td>Web</td></tr>
+              <tr><td>Role</td><td>Product Designer / 100%</td></tr>
+              <tr><td>Period</td><td>2025</td></tr>
             </tbody>
           </table>
         </div>
