@@ -159,11 +159,7 @@ export default function VOCPage() {
             <div className={styles.section}>
               <div className={styles.sectionSide} />
               <div className={styles.sectionContent}>
-                <p className={styles.sectionTitle}>3. 설득이 아닌 실제 화면으로</p>
-                <p className={styles.text}>
-                  초반 팀 내 반응은 미지근했습니다. VOC 정리 자동화의 필요성을 말로 설명하는 대신, 직접 만들어서 보여줬습니다. 바이브 코딩으로 실제 동작하는 프로토타입을 구현하자 팀에서 첫 번째 반응이 나왔습니다.
-                </p>
-                <p className={styles.sectionTitle}>4. 자동화 파이프라인 구축</p>
+                <p className={styles.sectionTitle}>3. 자동화 파이프라인 구축</p>
                 <ul className={styles.bullets}>
                   <li>채팅 API 연동으로 신규 VOC 자동 수집</li>
                   <li>Gemini AI로 상품군 및 VOC 유형 자동 분류</li>
@@ -179,6 +175,10 @@ export default function VOCPage() {
                 <p className={styles.sectionLabel}>성과</p>
               </div>
               <div className={styles.sectionContent}>
+                <p className={styles.sectionTitle}>설득이 아닌 실제 화면으로</p>
+                <p className={styles.text}>
+                  초반 팀 내 반응은 미지근했습니다. VOC 정리 자동화의 필요성을 말로 설명하는 대신, 직접 만들어서 보여줬습니다. 바이브 코딩으로 실제 동작하는 프로토타입을 구현하자 팀에서 첫 번째 반응이 나왔습니다.
+                </p>
                 <div className={styles.highlight}>
                   <p className={styles.highlightLabel}>팀 반응</p>
                   <p className={styles.highlightText}>
