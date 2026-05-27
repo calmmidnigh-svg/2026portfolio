@@ -17,8 +17,7 @@ const AutoPlayVideo = ({ src, style }: AutoPlayVideoProps) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           video.play();
-        } else {
-          video.pause();
+          observer.disconnect();
         }
       },
       { threshold: 0.3 }
