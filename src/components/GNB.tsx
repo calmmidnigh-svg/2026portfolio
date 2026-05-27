@@ -16,7 +16,7 @@ export default function GNB() {
         {!isWorkPage && (
           <nav className={styles.nav}>
             <Link href="/" className={`${styles.navItem} ${pathname === '/' ? styles.active : ''}`}>
-              작업
+              포트폴리오
             </Link>
             <Link href="/resume" className={`${styles.navItem} ${pathname === '/resume' ? styles.active : ''}`}>
               이력서
