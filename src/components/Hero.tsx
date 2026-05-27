@@ -11,7 +11,8 @@ export default function Hero() {
             <p className={styles.name}>최윤정</p>
             <p className={styles.title}>프로덕트디자이너</p>
             <p className={styles.desc}>
-              {`복잡한 걸 단순하게 만드는 걸 좋아합니다.\n\n디자인 시스템을 만들어서 팀 출시 사이클을 2년에서 6개월로 줄였습니다. 컴포넌트를 쌓은 게 아니라, 팀이 같은 언어로 일할 수 있는 기준을 만든 것이었습니다.\n\n제한된 상황에서도 사용자와의 접점을 찾습니다. 기획부터 QA까지 직접 챙기고, AI는 빠른 검증 도구로 활용합니다.\n\n디자이너는 비즈니스 협력자로서, 문제를 제대로 정의하는 것이 가장 중요한 역할이라고 생각합니다.`}            </p>
+              {`말보다 먼저 만들어 보여줍니다.\n\n카페에서 즉석 인터뷰로 전체 화면 방향을 바꾼 적 있고, 필요한 도구가 없으면 직접 코딩해서 만듭니다.\n\n문제를 발견하면 권한이 없어도 일단 시도하는 디자이너입니다.`}
+            </p>
           </div>
           <div className={styles.links}>
             <a href="https://www.linkedin.com/in/%EC%9C%A4%EC%A0%95-%EC%B5%9C-3a9665380" target="_blank" rel="noreferrer" className={styles.link}>
