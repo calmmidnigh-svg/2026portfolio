@@ -78,6 +78,7 @@ const WorkImageGallery = ({ images }: WorkImageGalleryProps) => {
 
       {isOverlayOpen && (
         <div className={styles.overlay} onClick={handleCloseOverlay}>
+          <button className={styles.closeButton} onClick={handleCloseOverlay} aria-label="닫기">✕</button>
           <div className={styles.overlayImageWrapper} onClick={handleStopPropagation}>
             <Image
               src={images[currentIndex].src}

@@ -66,6 +66,29 @@
   cursor: zoom-out;
 }
 
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.88);
+  color: #333333;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.15s;
+
+  &:hover {
+    background: #fff;
+  }
+}
+
 .overlayImageWrapper {
   position: relative;
   width: 90vw;
