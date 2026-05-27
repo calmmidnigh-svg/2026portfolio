@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import GNB from '@/components/GNB';
 import Footer from '@/components/Footer';
+import AutoPlayVideo from '@/components/AutoPlayVideo';
 import styles from '../hr-contract/page.module.scss';
 
 export default function VOCPage() {
@@ -101,12 +102,8 @@ export default function VOCPage() {
               <Image src="/images/voc2-2.png" alt="VOC 배경 2" fill style={{ objectFit: 'contain' }} unoptimized />
             </div>
             <div className={styles.gridItem} style={{ background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '32px' }}>
-              <video
+              <AutoPlayVideo
                 src="/images/voc2-3.mov"
-                autoPlay
-                muted
-                loop
-                playsInline
                 style={{ width: '100%', height: 'auto', borderRadius: '12px', boxShadow: '0 0 10px rgba(0,0,0,0.1)' }}
               />
             </div>
@@ -144,12 +141,8 @@ export default function VOCPage() {
 
           {/* 영상 */}
           <div className={styles.imageFull} style={{ overflow: 'hidden', borderRadius: '12px' }}>
-            <video
+            <AutoPlayVideo
               src="/images/voc3.mov"
-              autoPlay
-              muted
-              loop
-              playsInline
               style={{ width: '100%', height: 'auto', display: 'block' }}
             />
           </div>
