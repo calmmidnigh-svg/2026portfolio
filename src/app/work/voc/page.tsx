@@ -142,7 +142,7 @@ export default function VOCPage() {
           {/* 영상 */}
           <div className={styles.imageFull} style={{ overflow: 'hidden', borderRadius: '12px' }}>
             <AutoPlayVideo
-              src="/images/voc3.mov"
+              src="/images/voc3.mp4"
               style={{ width: '100%', height: 'auto', display: 'block' }}
             />
           </div>
