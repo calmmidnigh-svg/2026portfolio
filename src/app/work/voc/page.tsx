@@ -186,7 +186,7 @@ export default function VOCPage() {
                     "URL 하나 파서 연결하죠."
                   </p>
                 </div>
-                <p className={styles.text}>조직에서 도구의 가치를 인정받는 순간이었습니다. 이후 내부 URL로 연결되어 팀에서 실제로 사용 중입니다.</p>
+                <p className={styles.text}>조직에서 도구의 가치를 인정받는 순간이었습니다. 이후 내부 URL로 연결되어 팀에서 실제로 사용 예정입니다.</p>
               </div>
             </div>
 
