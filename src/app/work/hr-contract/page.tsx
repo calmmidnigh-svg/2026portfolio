@@ -176,7 +176,10 @@ export default function HRContractPage() {
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
-                  이 프로젝트에서 가장 어려웠던 점은 <strong>명확한 요구사항 없이 서비스의 디테일을 스스로 정의해야 했던 것</strong>이었습니다. 요구사항이 완성된 후 디자인하는 것이 아니라, 디자인을 통해 요구사항을 구체화하는 방식으로 일했습니다.
+                  가장 도전적이었던 부분은 정리된 요구사항을 전달받아 디자인하는 구조가 아니라, 디자인을 통해 서비스의 요구사항과 디테일을 함께 만들어가야 했던 점이었습니다.
+                </p>
+                <p className={styles.text}>
+                  화면을 설계하는 과정에서 사용자 경험과 정책, 인터랙션의 기준까지 스스로 정의해야 했고, 이를 통해 문제를 구체화하며 프로젝트 방향성을 정립해 나갔습니다.
                 </p>
               </div>
             </div>
