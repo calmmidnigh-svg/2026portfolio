@@ -14,10 +14,11 @@ interface ProjectCardProps {
   tags: string[];
   image?: string;
   href?: string;
+  desc?: string;
   overview?: OverviewType;
 }
 
-export default function ProjectCard({ title, image, href, overview }: ProjectCardProps) {
+export default function ProjectCard({ title, image, href, desc, overview }: ProjectCardProps) {
   const inner = (
     <div className={styles.card}>
       <div className={styles.thumbnail}>
@@ -29,6 +30,7 @@ export default function ProjectCard({ title, image, href, overview }: ProjectCar
       </div>
       <div className={styles.info}>
         <p className={styles.title}>{title}</p>
+        {desc && <p className={styles.desc}>{desc}</p>}
         {overview && (
           <table className={styles.overview}>
             <tbody>
