@@ -168,10 +168,15 @@ export default function VOCPage() {
                 <p className={styles.sectionLabel}>성과</p>
               </div>
               <div className={styles.sectionContent}>
-                <p className={styles.sectionTitle}>설득이 아닌 실제 화면으로</p>
-                <p className={styles.text}>
-                  초반 팀 내 반응은 미지근했습니다. VOC 정리 자동화의 필요성을 말로 설명하는 대신, 직접 만들어서 보여줬습니다. 바이브 코딩으로 실제 동작하는 프로토타입을 구현하자 팀에서 첫 번째 반응이 나왔습니다.
-                </p>
+                <p className={styles.sectionTitle}>수작업 VOC 정리 → 자동화</p>
+                <p className={styles.text}>매주 직접 채팅을 뒤지던 작업이 파이프라인으로 대체됐습니다.</p>
+                <p className={styles.sectionTitle}>문제별 가시화 달성</p>
+                <ul className={styles.bullets}>
+                  <li>일/주/월별 VOC 유입량 수치 확인 가능</li>
+                  <li>상품군·VOC 유형별 분류로 패턴 파악 가능</li>
+                  <li>고객사별 집계로 집중 발생 고객사 식별 가능</li>
+                </ul>
+                <p className={styles.sectionTitle}>팀 즉각 채택</p>
                 <div className={styles.highlight}>
                   <p className={styles.highlightLabel}>팀 반응</p>
                   <p className={styles.highlightText}>
@@ -179,7 +184,7 @@ export default function VOCPage() {
                     "URL 하나 파서 연결하죠."
                   </p>
                 </div>
-                <p className={styles.text}>조직에서 도구의 가치를 인정받는 순간이었습니다. 이후 내부 URL로 연결되어 팀에서 실제로 사용 예정입니다.</p>
+                <p className={styles.text}>프로토타입 공개 직후 내부 URL 연결 요청이 들어왔고, 현재 팀 사용 예정입니다.</p>
               </div>
             </div>
 
