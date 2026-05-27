@@ -51,4 +51,24 @@
   position: relative;
   flex: 1;
   overflow: hidden;
+  cursor: zoom-in;
+}
+
+/* 오버레이 */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(34, 34, 34, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+.overlayImageWrapper {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  cursor: default;
 }
