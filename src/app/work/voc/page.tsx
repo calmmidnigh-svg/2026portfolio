@@ -36,10 +36,10 @@ export default function VOCPage() {
         <div className={styles.container}>
           <div className={styles.body}>
 
-            {/* 프로젝트 배경 */}
+            {/* 배경 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>프로젝트 배경</p>
+                <p className={styles.sectionLabel}>배경</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
@@ -48,10 +48,10 @@ export default function VOCPage() {
               </div>
             </div>
 
-            {/* 비즈니스 목표 */}
+            {/* 목표 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>비즈니스 목표</p>
+                <p className={styles.sectionLabel}>목표</p>
               </div>
               <div className={styles.sectionContent}>
                 <ul className={styles.bullets}>
@@ -62,10 +62,10 @@ export default function VOCPage() {
               </div>
             </div>
 
-            {/* 타깃 사용자 */}
+            {/* 사용자정의 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>타깃 사용자</p>
+                <p className={styles.sectionLabel}>사용자정의</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
@@ -111,11 +111,11 @@ export default function VOCPage() {
             </div>
           </div>
 
-          {/* 해결방안 */}
+          {/* 해결 */}
           <div className={styles.body} style={{ paddingTop: 0 }}>
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>해결방안</p>
+                <p className={styles.sectionLabel}>해결</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>1. 데이터 파악</p>
@@ -153,7 +153,7 @@ export default function VOCPage() {
             />
           </div>
 
-          {/* 해결방안 03 + 결과 */}
+          {/* 해결 03 + 결과 */}
           <div className={styles.body}>
             <div className={styles.section}>
               <div className={styles.sectionSide} />
@@ -172,10 +172,10 @@ export default function VOCPage() {
               </div>
             </div>
 
-            {/* 결과 및 성과 */}
+            {/* 성과 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>결과 및 성과</p>
+                <p className={styles.sectionLabel}>성과</p>
               </div>
               <div className={styles.sectionContent}>
                 <div className={styles.highlight}>
@@ -189,10 +189,10 @@ export default function VOCPage() {
               </div>
             </div>
 
-            {/* 레슨런 */}
+            {/* 회고 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>레슨런</p>
+                <p className={styles.sectionLabel}>회고</p>
               </div>
               <div className={styles.sectionContent}>
                 <ul className={styles.bullets}>

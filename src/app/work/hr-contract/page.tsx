@@ -36,10 +36,10 @@ export default function HRContractPage() {
         <div className={styles.container}>
           <div className={styles.body}>
 
-            {/* 프로젝트 배경 */}
+            {/* 배경 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>프로젝트 배경</p>
+                <p className={styles.sectionLabel}>배경</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
@@ -52,10 +52,10 @@ export default function HRContractPage() {
               </div>
             </div>
 
-            {/* 비즈니스 목표 */}
+            {/* 목표 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>비즈니스 목표</p>
+                <p className={styles.sectionLabel}>목표</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
@@ -64,10 +64,10 @@ export default function HRContractPage() {
               </div>
             </div>
 
-            {/* 타깃 사용자 */}
+            {/* 사용자정의 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>타깃 사용자</p>
+                <p className={styles.sectionLabel}>사용자정의</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
@@ -97,11 +97,11 @@ export default function HRContractPage() {
             <Image src="/images/contract2.png" alt="HR전자계약서 작업 화면" width={4096} height={1916} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
-          {/* 해결방안 01 */}
+          {/* 해결 01 */}
           <div className={styles.body} style={{ paddingTop: 0 }}>
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>해결방안</p>
+                <p className={styles.sectionLabel}>해결</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>태그 추상화 시스템</p>
@@ -124,7 +124,7 @@ export default function HRContractPage() {
             <Image src="/images/contract3.png" alt="HR전자계약서 작업 화면 3" width={4171} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
-          {/* 해결방안 02 */}
+          {/* 해결 02 */}
           <div className={styles.body} style={{ paddingTop: 0, paddingBottom: 0 }}>
             <div className={styles.section}>
               <div className={styles.sectionSide} />
@@ -149,11 +149,11 @@ export default function HRContractPage() {
             <Image src="/images/contract4.png" alt="HR전자계약서 작업 화면 4" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
-          {/* 결과 및 성과 + 레슨런 */}
+          {/* 성과 + 회고 */}
           <div className={styles.body}>
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>결과 및 성과</p>
+                <p className={styles.sectionLabel}>성과</p>
               </div>
               <div className={styles.sectionContent}>
                 <ul className={styles.bullets}>
@@ -171,10 +171,10 @@ export default function HRContractPage() {
               </div>
             </div>
 
-            {/* 레슨런 */}
+            {/* 회고 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>레슨런</p>
+                <p className={styles.sectionLabel}>회고</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>

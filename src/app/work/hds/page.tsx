@@ -36,10 +36,10 @@ export default function HDSPage() {
         <div className={styles.container}>
           <div className={styles.body}>
 
-            {/* 프로젝트 배경 */}
+            {/* 배경 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>프로젝트 배경</p>
+                <p className={styles.sectionLabel}>배경</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
@@ -48,10 +48,10 @@ export default function HDSPage() {
               </div>
             </div>
 
-            {/* 비즈니스 목표 */}
+            {/* 목표 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>비즈니스 목표</p>
+                <p className={styles.sectionLabel}>목표</p>
               </div>
               <div className={styles.sectionContent}>
                 <ul className={styles.bullets}>
@@ -62,10 +62,10 @@ export default function HDSPage() {
               </div>
             </div>
 
-            {/* 타깃 사용자 */}
+            {/* 사용자정의 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>타깃 사용자</p>
+                <p className={styles.sectionLabel}>사용자정의</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
@@ -102,11 +102,11 @@ export default function HDSPage() {
             <Image src="/images/hds2.png" alt="HDS 디자인 시스템 2" width={4096} height={1916} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
-          {/* 해결방안 */}
+          {/* 해결 */}
           <div className={styles.body} style={{ paddingTop: 0 }}>
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>해결방안</p>
+                <p className={styles.sectionLabel}>해결</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>1. 기반 토큰 설계</p>
@@ -125,7 +125,7 @@ export default function HDSPage() {
             <Image src="/images/hds3.png" alt="HDS 디자인 시스템 3" width={4009} height={2979} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
-          {/* 해결방안 02 */}
+          {/* 해결 02 */}
           <div className={styles.body} style={{ paddingTop: 0, paddingBottom: 0 }}>
             <div className={styles.section}>
               <div className={styles.sectionSide} />
@@ -150,7 +150,7 @@ export default function HDSPage() {
             <Image src="/images/hds4.png" alt="HDS 디자인 시스템 4" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
-          {/* 해결방안 03 + 결과 + 레슨런 */}
+          {/* 해결 03 + 결과 + 회고 */}
           <div className={styles.body}>
             <div className={styles.section}>
               <div className={styles.sectionSide} />
@@ -162,10 +162,10 @@ export default function HDSPage() {
               </div>
             </div>
 
-            {/* 결과 및 성과 */}
+            {/* 성과 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>결과 및 성과</p>
+                <p className={styles.sectionLabel}>성과</p>
               </div>
               <div className={styles.sectionContent}>
                 <table className={styles.overviewTable}>
@@ -201,10 +201,10 @@ export default function HDSPage() {
               </div>
             </div>
 
-            {/* 레슨런 */}
+            {/* 회고 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>레슨런</p>
+                <p className={styles.sectionLabel}>회고</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>

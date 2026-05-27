@@ -36,10 +36,10 @@ export default function UnretiredPage() {
         <div className={styles.container}>
           <div className={styles.body}>
 
-            {/* 프로젝트 배경 */}
+            {/* 배경 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>프로젝트 배경</p>
+                <p className={styles.sectionLabel}>배경</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
@@ -49,10 +49,10 @@ export default function UnretiredPage() {
               </div>
             </div>
 
-            {/* 비즈니스 목표 */}
+            {/* 목표 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>비즈니스 목표</p>
+                <p className={styles.sectionLabel}>목표</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
@@ -61,10 +61,10 @@ export default function UnretiredPage() {
               </div>
             </div>
 
-            {/* 타깃 사용자 */}
+            {/* 사용자정의 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>타깃 사용자</p>
+                <p className={styles.sectionLabel}>사용자정의</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
@@ -128,11 +128,11 @@ export default function UnretiredPage() {
             <Image src="/images/unretired2.png" alt="언리타이얼드 작업 화면 2" width={4096} height={1916} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
-          {/* 해결방안 */}
+          {/* 해결 */}
           <div className={styles.body} style={{ paddingTop: 0, paddingBottom: 0 }}>
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>해결방안</p>
+                <p className={styles.sectionLabel}>해결</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>문제 ① 콘텐츠가 적어 보인다</p>
@@ -160,7 +160,7 @@ export default function UnretiredPage() {
             <div className={styles.section}>
               <div className={styles.sectionSide} />
               <div className={styles.sectionContent}>
-                <p className={styles.sectionTitle}>문제 ③ 타깃 사용자가 화면을 불편해한다</p>
+                <p className={styles.sectionTitle}>문제 ③ 사용자정의가 화면을 불편해한다</p>
                 <p className={styles.text}>팀 내에서 "40-50대에게 다크모드가 맞을까"라는 의문이 생겼습니다. 가설을 세우는 대신 바로 확인하러 갔습니다. 작업하던 카페에서 같은 연령대 분들께 즉석으로 인터뷰를 진행했고, 두 가지를 확인했습니다.</p>
                 <ul className={styles.bullets}>
                   <li>다크모드의 존재 자체를 모른다</li>
@@ -176,11 +176,11 @@ export default function UnretiredPage() {
             <Image src="/images/unretired4.png" alt="언리타이얼드 작업 화면 4" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
-          {/* 결과 및 성과 + 레슨런 */}
+          {/* 성과 + 회고 */}
           <div className={styles.body}>
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>결과 및 성과</p>
+                <p className={styles.sectionLabel}>성과</p>
               </div>
               <div className={styles.sectionContent}>
                 <ul className={styles.bullets}>
@@ -191,10 +191,10 @@ export default function UnretiredPage() {
               </div>
             </div>
 
-            {/* 레슨런 */}
+            {/* 회고 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>레슨런</p>
+                <p className={styles.sectionLabel}>회고</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
