@@ -17,7 +17,7 @@ export default function UnretiredPage() {
           <h1 className={styles.title}>지식 공유 강의 플랫폼</h1>
         </div>
 
-        {/* Hero — 이미지 영역 */}
+        {/* Hero */}
         <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
           <Image src="/images/unretired1.png" alt="언리타이얼드" fill style={{ objectFit: 'cover' }} unoptimized />
         </div>
@@ -34,25 +34,56 @@ export default function UnretiredPage() {
         </div>
 
         <div className={styles.container}>
-
           <div className={styles.body}>
 
-            {/* 문제정의 */}
+            {/* 프로젝트 배경 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>문제정의</p>
+                <p className={styles.sectionLabel}>프로젝트 배경</p>
               </div>
               <div className={styles.sectionContent}>
-                <p className={styles.subHeading}>이런 서비스예요</p>
                 <p className={styles.text}>
                   만 52.8세에 퇴직하는 대한민국에서, 69.4%의 시니어가 여전히 일하고 싶어합니다. 언리타이얼드는 이 고경력자들의 경험을 강의로 연결하고, 신입과 학습자들이 배울 수 있게 하는 지식 순환 플랫폼입니다.
                 </p>
-                <p className={styles.subHeading}>투입됐을 때 상황</p>
-                <p className={styles.text}>초기 MVP가 있는 상태에서 중간에 합류했습니다. 세 가지 문제가 눈에 띄었습니다.</p>
+                <p className={styles.text}>초기 MVP가 있는 상태에서 중간에 합류했습니다.</p>
+              </div>
+            </div>
+
+            {/* 비즈니스 목표 */}
+            <div className={styles.section}>
+              <div className={styles.sectionSide}>
+                <p className={styles.sectionLabel}>비즈니스 목표</p>
+              </div>
+              <div className={styles.sectionContent}>
+                <p className={styles.text}>
+                  고경력자의 경험을 강의로 연결하는 지식 순환 플랫폼을 구축하고, 수강생의 실질적인 학습 경험을 설계합니다.
+                </p>
+              </div>
+            </div>
+
+            {/* 사용자 누구 */}
+            <div className={styles.section}>
+              <div className={styles.sectionSide}>
+                <p className={styles.sectionLabel}>사용자 누구</p>
+              </div>
+              <div className={styles.sectionContent}>
+                <p className={styles.text}>
+                  <strong>수강생 (학습자)</strong>{` — 고경력자의 실무 경험을 배우고 싶은 직장인/학생`}<br />
+                  <strong>강사 (고경력자)</strong>{` — 본인의 경험을 강의로 공유하고 싶은 시니어`}
+                </p>
+              </div>
+            </div>
+
+            {/* 사용자 문제정의 */}
+            <div className={styles.section}>
+              <div className={styles.sectionSide}>
+                <p className={styles.sectionLabel}>사용자 문제정의</p>
+              </div>
+              <div className={styles.sectionContent}>
                 <ul className={styles.bullets}>
                   <li><strong>화면이 엉망이었다</strong> — 화면 간 일관성이 없었고, 엣지케이스가 정의되지 않아 개발 구현이 안 될 것 같은 상태</li>
-                  <li><strong>수강생을 모르는 채로 만들고 있었다</strong> — 강사진에 대한 니즈는 있었지만, 콘텐츠를 소비할 수강생이 무엇을 원하는지 파악 없음</li>
-                  <li><strong>콘텐츠가 너무 적었다</strong> — 초기 서비스라 콘텐츠 수가 적었고, 그대로 노출하면 서비스가 빈약해 보일 게 분명했음</li>
+                  <li><strong>수강생을 모르는 채로 만들고 있었다</strong> — 강사진에 대한 니즈는 있었지만, 수강생이 무엇을 원하는지 파악 없음</li>
+                  <li><strong>콘텐츠가 너무 적었다</strong> — 초기 서비스라 콘텐츠 수가 적었고, 그대로 노출하면 서비스가 빈약해 보일 것</li>
                 </ul>
               </div>
             </div>
@@ -68,13 +99,13 @@ export default function UnretiredPage() {
         <div className={styles.container}>
           <div className={styles.body}>
 
-            {/* 수요 검증 */}
+            {/* 사용자 인터뷰 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>핵심 결정</p>
+                <p className={styles.sectionLabel}>사용자 인터뷰</p>
               </div>
               <div className={styles.sectionContent}>
-                <p className={styles.sectionTitle}>화면 전에 수요부터 확인했어요</p>
+                <p className={styles.sectionTitle}>수요 검증 — 화면 전에 먼저 확인했습니다</p>
                 <p className={styles.text}>수강생 니즈를 모르는 채로 화면을 만드는 건 의미가 없다고 판단했습니다.</p>
                 <p className={styles.subHeading}>가설</p>
                 <p className={styles.text}>정년퇴직 고경력자의 경험을 강의로 제공하면, 학습자들이 실제로 원할 것입니다.</p>
@@ -97,11 +128,11 @@ export default function UnretiredPage() {
             <Image src="/images/unretired2.png" alt="언리타이얼드 작업 화면 2" width={4096} height={1916} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
-          {/* 작업과정 01, 02, 03 */}
+          {/* 해결방안 */}
           <div className={styles.body} style={{ paddingTop: 0, paddingBottom: 0 }}>
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>작업과정</p>
+                <p className={styles.sectionLabel}>해결방안</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>문제 ① 콘텐츠가 적어 보인다</p>
@@ -111,7 +142,6 @@ export default function UnretiredPage() {
                   <li><strong>개인화된 콘텐츠 노출</strong> — 관심사 기반 추천으로 내 것처럼 느끼게</li>
                   <li><strong>랜덤 콘텐츠</strong> — 예상치 못한 발견으로 탐색 유도</li>
                 </ul>
-                <p className={styles.text}>같은 콘텐츠가 카테고리별로 다른 맥락에서 노출되어 콘텐츠의 순환이 일어나도록 했습니다.</p>
               </div>
             </div>
 
@@ -119,7 +149,7 @@ export default function UnretiredPage() {
               <div className={styles.sectionSide} />
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>문제 ② 한 번 오고 안 돌아온다</p>
-                <p className={styles.text}>학습 플랫폼은 꾸준한 재방문이 없으면 의미가 없습니다. 두 가지로 재방문과 학습 지속을 유도했습니다.</p>
+                <p className={styles.text}>학습 플랫폼은 꾸준한 재방문이 없으면 의미가 없습니다.</p>
                 <ul className={styles.bullets}>
                   <li><strong>진도율 시각화</strong> — 내가 어느 정도 진행했는지 한눈에 보여줌. 진행 중인 것을 완료하고 싶은 심리를 활용해 다음에 다시 들어올 이유를 만듦</li>
                   <li><strong>강사 메시지</strong> — 강사가 학습자에게 직접 메시지를 보냄. 강사가 나를 기억하고 응원한다는 느낌은 학습 의욕을 높이고 이탈을 줄임</li>
@@ -146,11 +176,11 @@ export default function UnretiredPage() {
             <Image src="/images/unretired4.png" alt="언리타이얼드 작업 화면 4" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
-          {/* 결과 + 회고 */}
+          {/* 결과 및 성과 + 레슨런 */}
           <div className={styles.body}>
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>결과</p>
+                <p className={styles.sectionLabel}>결과 및 성과</p>
               </div>
               <div className={styles.sectionContent}>
                 <ul className={styles.bullets}>
@@ -161,10 +191,10 @@ export default function UnretiredPage() {
               </div>
             </div>
 
-            {/* 회고 */}
+            {/* 레슨런 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>회고</p>
+                <p className={styles.sectionLabel}>레슨런</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>

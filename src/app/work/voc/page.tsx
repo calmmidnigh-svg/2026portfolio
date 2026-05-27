@@ -17,7 +17,7 @@ export default function VOCPage() {
           <h1 className={styles.title}>AI VOC 대시보드</h1>
         </div>
 
-        {/* Hero — 이미지 영역 */}
+        {/* Hero */}
         <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
           <Image src="/images/voc1.png" alt="AI VOC 대시보드" fill style={{ objectFit: 'cover' }} unoptimized />
         </div>
@@ -34,40 +34,57 @@ export default function VOCPage() {
         </div>
 
         <div className={styles.container}>
-
           <div className={styles.body}>
 
-            {/* 문제정의 */}
+            {/* 프로젝트 배경 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>문제정의</p>
+                <p className={styles.sectionLabel}>프로젝트 배경</p>
               </div>
               <div className={styles.sectionContent}>
-                <p className={styles.subHeading}>직접 경험한 문제에서 시작했습니다</p>
                 <p className={styles.text}>
-                  고객사 VOC가 채팅으로 들어오고 있었지만, 이를 정리할 체계가 없었습니다. 매주 직접 대화 내용을 확인하고 엑셀에 수작업으로 정리하는 것이 유일한 방법이었습니다.
-                </p>
-                <ul className={styles.bullets}>
-                  <li><strong>파악 불가</strong> — VOC가 얼마나 들어오는지, 어떤 유형이 많은지 수치로 볼 수 없음</li>
-                  <li><strong>개선 여부 확인 불가</strong> — VOC를 처리하고 있지만 실제로 나아지고 있는지 알 수 없음</li>
-                  <li><strong>고객사 파악 불가</strong> — 어느 고객사에서 VOC가 집중되는지 파악할 방법이 없음</li>
-                </ul>
-                <p className={styles.text}>
-                  직접 느끼는 비효율이었고, 동시에 팀에서도 동일한 니즈가 있다는 것을 확인했습니다.
+                  아무도 시키지 않은 프로젝트입니다. 고객사 VOC가 채팅으로 들어오고 있었지만, 이를 정리할 체계가 없었습니다. 매주 직접 대화 내용을 확인하고 엑셀에 수작업으로 정리하는 것이 유일한 방법이었습니다.
                 </p>
               </div>
             </div>
 
-            {/* 목표 */}
+            {/* 비즈니스 목표 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>목표</p>
+                <p className={styles.sectionLabel}>비즈니스 목표</p>
               </div>
               <div className={styles.sectionContent}>
                 <ul className={styles.bullets}>
                   <li>VOC 수집부터 분류까지 자동화하여 수작업 제거</li>
                   <li>일별 / 주별 / 월별 VOC 현황을 수치로 파악</li>
                   <li>고객사별, 상품군별 히트맵 시각화</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* 사용자 누구 */}
+            <div className={styles.section}>
+              <div className={styles.sectionSide}>
+                <p className={styles.sectionLabel}>사용자 누구</p>
+              </div>
+              <div className={styles.sectionContent}>
+                <p className={styles.text}>
+                  <strong>내부 운영/CS팀</strong>{` — VOC를 수집하고 처리하는 담당자`}<br />
+                  <strong>제품팀</strong>{` — VOC 데이터를 기반으로 개선 우선순위를 결정하는 팀`}
+                </p>
+              </div>
+            </div>
+
+            {/* 사용자 문제정의 */}
+            <div className={styles.section}>
+              <div className={styles.sectionSide}>
+                <p className={styles.sectionLabel}>사용자 문제정의</p>
+              </div>
+              <div className={styles.sectionContent}>
+                <ul className={styles.bullets}>
+                  <li><strong>파악 불가</strong> — VOC가 얼마나 들어오는지, 어떤 유형이 많은지 수치로 볼 수 없음</li>
+                  <li><strong>개선 여부 확인 불가</strong> — VOC를 처리하고 있지만 실제로 나아지고 있는지 알 수 없음</li>
+                  <li><strong>고객사 파악 불가</strong> — 어느 고객사에서 VOC가 집중되는지 파악할 방법이 없음</li>
                 </ul>
               </div>
             </div>
@@ -94,11 +111,11 @@ export default function VOCPage() {
             </div>
           </div>
 
-          {/* 작업과정 01 */}
+          {/* 해결방안 */}
           <div className={styles.body} style={{ paddingTop: 0 }}>
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>작업과정</p>
+                <p className={styles.sectionLabel}>해결방안</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>1. 데이터 파악</p>
@@ -109,15 +126,12 @@ export default function VOCPage() {
             </div>
           </div>
 
-          {/* 작업과정 02 */}
           <div className={styles.body} style={{ paddingTop: 0, paddingBottom: 0 }}>
             <div className={styles.section}>
               <div className={styles.sectionSide} />
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>2. 분류 체계 설계</p>
-                <p className={styles.text}>
-                  단순 버그 리포팅이 아니라 실질적인 고객 요청을 구분하기 위해 분류 기준을 직접 정의했습니다.
-                </p>
+                <p className={styles.text}>단순 버그 리포팅이 아니라 실질적인 고객 요청을 구분하기 위해 분류 기준을 직접 정의했습니다.</p>
                 <ul className={styles.bullets}>
                   <li><strong>상품군</strong> — HR전자계약서 / 휴가관리 / Payroll / 출결근태 / 급여관리 / 기타</li>
                   <li><strong>VOC 유형</strong> — 기능 오류 / 사용성 / 데이터 오류 / 문의 등</li>
@@ -127,10 +141,7 @@ export default function VOCPage() {
             </div>
           </div>
 
-          {/* 이미지 */}
-          <div className={styles.imageFull} />
-
-          {/* voc3 영상 */}
+          {/* 영상 */}
           <div className={styles.imageFull} style={{ overflow: 'hidden', borderRadius: '12px' }}>
             <video
               src="/images/voc3.mov"
@@ -142,7 +153,7 @@ export default function VOCPage() {
             />
           </div>
 
-          {/* 작업과정 03 + 결과 */}
+          {/* 해결방안 03 + 결과 */}
           <div className={styles.body}>
             <div className={styles.section}>
               <div className={styles.sectionSide} />
@@ -151,20 +162,6 @@ export default function VOCPage() {
                 <p className={styles.text}>
                   초반 팀 내 반응은 미지근했습니다. VOC 정리 자동화의 필요성을 말로 설명하는 대신, 직접 만들어서 보여줬습니다. 바이브 코딩으로 실제 동작하는 프로토타입을 구현하자 팀에서 첫 번째 반응이 나왔습니다.
                 </p>
-                <div className={styles.highlight}>
-                  <p className={styles.highlightLabel}>팀 반응</p>
-                  <p className={styles.highlightText}>
-                    "이거 어디서 볼 수 있어요?"<br />
-                    "URL 하나 파서 연결하죠."
-                  </p>
-                </div>
-                <p className={styles.text}>조직에서 도구의 가치를 인정받는 순간이었습니다.</p>
-              </div>
-            </div>
-
-            <div className={styles.section}>
-              <div className={styles.sectionSide} />
-              <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>4. 자동화 파이프라인 구축</p>
                 <ul className={styles.bullets}>
                   <li>채팅 API 연동으로 신규 VOC 자동 수집</li>
@@ -175,10 +172,27 @@ export default function VOCPage() {
               </div>
             </div>
 
-            {/* 회고 */}
+            {/* 결과 및 성과 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>회고</p>
+                <p className={styles.sectionLabel}>결과 및 성과</p>
+              </div>
+              <div className={styles.sectionContent}>
+                <div className={styles.highlight}>
+                  <p className={styles.highlightLabel}>팀 반응</p>
+                  <p className={styles.highlightText}>
+                    "이거 어디서 볼 수 있어요?"<br />
+                    "URL 하나 파서 연결하죠."
+                  </p>
+                </div>
+                <p className={styles.text}>조직에서 도구의 가치를 인정받는 순간이었습니다. 이후 내부 URL로 연결되어 팀에서 실제로 사용 중입니다.</p>
+              </div>
+            </div>
+
+            {/* 레슨런 */}
+            <div className={styles.section}>
+              <div className={styles.sectionSide}>
+                <p className={styles.sectionLabel}>레슨런</p>
               </div>
               <div className={styles.sectionContent}>
                 <ul className={styles.bullets}>

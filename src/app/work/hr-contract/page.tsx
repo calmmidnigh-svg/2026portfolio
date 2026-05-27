@@ -17,7 +17,7 @@ export default function HRContractPage() {
           <h1 className={styles.title}>HR전자계약서</h1>
         </div>
 
-        {/* Hero — 실제 제품 스크린샷 */}
+        {/* Hero */}
         <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
           <Image src="/images/contract_main.png" alt="HR전자계약서 화면" fill style={{ objectFit: 'cover' }} quality={100} />
         </div>
@@ -34,30 +34,17 @@ export default function HRContractPage() {
         </div>
 
         <div className={styles.container}>
-
-          {/* Body — Problem + 핵심결정 */}
           <div className={styles.body}>
 
-            {/* 문제정의 */}
+            {/* 프로젝트 배경 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>문제정의</p>
+                <p className={styles.sectionLabel}>프로젝트 배경</p>
               </div>
               <div className={styles.sectionContent}>
-                <p className={styles.subHeading}>비즈니스 목표</p>
                 <p className={styles.text}>
                   회사의 신규 B2B SaaS 사업으로, 모든 고객사에게 표준화된 형식의 전자계약서를 제공하는 서비스를 처음부터 설계해야 했습니다.
                 </p>
-                <p className={styles.subHeading}>핵심 UX 과제</p>
-                <p className={styles.text}>계약서라는 도메인은 구조적으로 두 가지 상충되는 니즈를 가집니다.</p>
-                <p className={styles.text}>
-                  <strong>작성자 입장</strong>{` — 계약서를 빠르고 간단하게 작성`}<br />
-                  <strong>수신자 입장</strong>{` — 계약 내용의 모든 디테일이 정확하게 담긴 문서가 필요`}
-                </p>
-                <p className={styles.text}>
-                  기존 방식대로라면 작성 화면에서도 모든 세부 내용을 입력해야 해 복잡도가 매우 높아지는 문제가 있었습니다.
-                </p>
-                <p className={styles.subHeading}>추가 제약</p>
                 <ul className={styles.bullets}>
                   <li>명확한 요구사항 없이 큰 비즈니스 로직만 존재하는 상태에서 출발</li>
                   <li>고객사마다 다른 정보 구조를 수용해야 하는 확장성 필요</li>
@@ -65,10 +52,56 @@ export default function HRContractPage() {
               </div>
             </div>
 
-            {/* 핵심 결정 */}
+            {/* 비즈니스 목표 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>핵심 결정</p>
+                <p className={styles.sectionLabel}>비즈니스 목표</p>
+              </div>
+              <div className={styles.sectionContent}>
+                <p className={styles.text}>
+                  모든 고객사에게 표준화된 전자계약서를 제공하고, 계약 프로세스를 디지털로 전환합니다.
+                </p>
+              </div>
+            </div>
+
+            {/* 사용자 누구 */}
+            <div className={styles.section}>
+              <div className={styles.sectionSide}>
+                <p className={styles.sectionLabel}>사용자 누구</p>
+              </div>
+              <div className={styles.sectionContent}>
+                <p className={styles.text}>
+                  <strong>작성자</strong>{` — 고객사 HR 담당자. 계약서를 빠르고 간단하게 작성하고 싶음`}<br />
+                  <strong>수신자</strong>{` — 계약 대상 직원. 계약 내용의 모든 디테일이 정확하게 담긴 문서가 필요`}
+                </p>
+              </div>
+            </div>
+
+            {/* 사용자 문제정의 */}
+            <div className={styles.section}>
+              <div className={styles.sectionSide}>
+                <p className={styles.sectionLabel}>사용자 문제정의</p>
+              </div>
+              <div className={styles.sectionContent}>
+                <p className={styles.text}>계약서 도메인은 구조적으로 두 사용자의 니즈가 상충합니다.</p>
+                <p className={styles.text}>
+                  작성자는 빠르고 단순하게 작성하길 원하지만, 수신자는 모든 세부 내용이 정확히 담긴 문서를 요구합니다. 기존 방식대로라면 작성 화면에서 모든 세부 내용을 직접 입력해야 해 복잡도가 매우 높아지는 문제가 있었습니다.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          {/* 이미지 */}
+          <div className={styles.imageFull}>
+            <Image src="/images/contract2.png" alt="HR전자계약서 작업 화면" width={4096} height={1916} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+          </div>
+
+          {/* 해결방안 01 */}
+          <div className={styles.body} style={{ paddingTop: 0 }}>
+            <div className={styles.section}>
+              <div className={styles.sectionSide}>
+                <p className={styles.sectionLabel}>해결방안</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.sectionTitle}>태그 추상화 시스템</p>
@@ -84,27 +117,6 @@ export default function HRContractPage() {
                 </ul>
               </div>
             </div>
-
-          </div>
-
-          {/* 이미지 */}
-          <div className={styles.imageFull}>
-            <Image src="/images/contract2.png" alt="HR전자계약서 작업 화면" width={4096} height={1916} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
-          </div>
-
-          {/* 작업과정 01 */}
-          <div className={styles.body} style={{ paddingTop: 0 }}>
-            <div className={styles.section}>
-              <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>작업과정</p>
-              </div>
-              <div className={styles.sectionContent}>
-                <p className={styles.sectionTitle}>기획서 해석 → 플로우 설계</p>
-                <p className={styles.text}>
-                  전달받은 기획서는 데이터 필드와 정책이 표 형태로 정리된 러프한 문서였습니다. 명확한 요구사항 없이 비즈니스 로직만 존재하는 상태에서 서비스 전체의 디테일을 직접 정의해야 했습니다.
-                </p>
-              </div>
-            </div>
           </div>
 
           {/* 이미지 */}
@@ -112,11 +124,15 @@ export default function HRContractPage() {
             <Image src="/images/contract3.png" alt="HR전자계약서 작업 화면 3" width={4171} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
-          {/* 작업과정 02 */}
+          {/* 해결방안 02 */}
           <div className={styles.body} style={{ paddingTop: 0, paddingBottom: 0 }}>
             <div className={styles.section}>
               <div className={styles.sectionSide} />
               <div className={styles.sectionContent}>
+                <p className={styles.sectionTitle}>기획서 해석 → 플로우 설계</p>
+                <p className={styles.text}>
+                  전달받은 기획서는 데이터 필드와 정책이 표 형태로 정리된 러프한 문서였습니다. 명확한 요구사항 없이 비즈니스 로직만 존재하는 상태에서 서비스 전체의 디테일을 직접 정의해야 했습니다.
+                </p>
                 <p className={styles.sectionTitle}>엣지케이스 기반 화면 설계</p>
                 <p className={styles.text}>요구사항이 불명확한 상황에서 "이 경우엔 어떻게 되는가"를 스스로 정의하며 화면을 설계했습니다.</p>
                 <ul className={styles.bullets}>
@@ -133,12 +149,11 @@ export default function HRContractPage() {
             <Image src="/images/contract4.png" alt="HR전자계약서 작업 화면 4" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
-          {/* 작업과정 03 + 결과 + 회고 */}
+          {/* 결과 및 성과 + 레슨런 */}
           <div className={styles.body}>
-            {/* 결과 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>결과</p>
+                <p className={styles.sectionLabel}>결과 및 성과</p>
               </div>
               <div className={styles.sectionContent}>
                 <ul className={styles.bullets}>
@@ -156,10 +171,10 @@ export default function HRContractPage() {
               </div>
             </div>
 
-            {/* 회고 */}
+            {/* 레슨런 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>회고</p>
+                <p className={styles.sectionLabel}>레슨런</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
