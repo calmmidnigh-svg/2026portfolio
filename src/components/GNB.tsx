@@ -12,7 +12,7 @@ export default function GNB() {
   return (
     <header className={styles.gnb}>
       <div className={styles.inner}>
-        <Link href="/" className={styles.logo}>Vonnepetit</Link>
+        <Link href="/" className={styles.logo}>Choi Yunjeong</Link>
         {!isWorkPage && (
           <nav className={styles.nav}>
             <Link href="/" className={`${styles.navItem} ${pathname === '/' ? styles.active : ''}`}>
