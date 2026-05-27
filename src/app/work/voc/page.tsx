@@ -23,7 +23,7 @@ export default function VOCPage() {
 
         {/* Hero */}
         <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
-          <Image src="/images/voc1.png" alt="AI VOC 대시보드" fill style={{ objectFit: 'cover' }} unoptimized />
+          <Image src="/images/voc1.png" alt="AI VOC 대시보드" fill style={{ objectFit: 'cover' }} unoptimized priority />
         </div>
 
         <div className={styles.header} style={{ paddingTop: 0 }}>

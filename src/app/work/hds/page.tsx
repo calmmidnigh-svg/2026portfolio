@@ -22,7 +22,7 @@ export default function HDSPage() {
 
         {/* Hero */}
         <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
-          <Image src="/images/hds1.png" alt="HDS 디자인 시스템" fill style={{ objectFit: 'cover' }} unoptimized />
+          <Image src="/images/hds1.png" alt="HDS 디자인 시스템" fill style={{ objectFit: 'cover' }} unoptimized priority />
         </div>
 
         <div className={styles.header} style={{ paddingTop: 0 }}>

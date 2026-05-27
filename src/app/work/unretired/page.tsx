@@ -22,7 +22,7 @@ export default function UnretiredPage() {
 
         {/* Hero */}
         <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
-          <Image src="/images/unretired1.png" alt="언리타이얼드" fill style={{ objectFit: 'cover' }} unoptimized />
+          <Image src="/images/unretired1.png" alt="언리타이얼드" fill style={{ objectFit: 'cover' }} unoptimized priority />
         </div>
 
         <div className={styles.header} style={{ paddingTop: 0 }}>
