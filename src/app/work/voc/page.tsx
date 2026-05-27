@@ -23,7 +23,7 @@ export default function VOCPage() {
 
         {/* Hero */}
         <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
-          <Image src="/images/voc1.png" alt="AI VOC 대시보드" fill style={{ objectFit: 'cover' }} unoptimized priority />
+          <Image src="/images/voc1.png" alt="AI VOC 대시보드" fill style={{ objectFit: 'cover' }} priority sizes="(max-width: 1023px) 100vw, 1024px" />
         </div>
 
         <div className={styles.header} style={{ paddingTop: 0 }}>
@@ -96,10 +96,10 @@ export default function VOCPage() {
           {/* 이미지 그리드 */}
           <div className={styles.imageGrid}>
             <div className={styles.gridItem} style={{ position: 'relative', background: '#fff' }}>
-              <Image src="/images/voc2-1.png" alt="VOC 배경 1" fill style={{ objectFit: 'contain' }} unoptimized />
+              <Image src="/images/voc2-1.png" alt="VOC 배경 1" fill style={{ objectFit: 'contain' }} sizes="(max-width: 767px) 100vw, 33vw" />
             </div>
             <div className={styles.gridItem} style={{ position: 'relative', background: '#f5f5f5' }}>
-              <Image src="/images/voc2-2.png" alt="VOC 배경 2" fill style={{ objectFit: 'contain' }} unoptimized />
+              <Image src="/images/voc2-2.png" alt="VOC 배경 2" fill style={{ objectFit: 'contain' }} sizes="(max-width: 767px) 100vw, 33vw" />
             </div>
             <div className={styles.gridItem} style={{ background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '32px' }}>
               <AutoPlayVideo

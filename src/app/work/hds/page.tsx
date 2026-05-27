@@ -22,7 +22,7 @@ export default function HDSPage() {
 
         {/* Hero */}
         <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
-          <Image src="/images/hds1.png" alt="HDS 디자인 시스템" fill style={{ objectFit: 'cover' }} unoptimized priority />
+          <Image src="/images/hds1.png" alt="HDS 디자인 시스템" fill style={{ objectFit: 'cover' }} priority sizes="(max-width: 1023px) 100vw, 1024px" />
         </div>
 
         <div className={styles.header} style={{ paddingTop: 0 }}>
@@ -100,7 +100,7 @@ export default function HDSPage() {
 
           {/* 이미지 */}
           <div className={styles.imageFull}>
-            <Image src="/images/hds2.png" alt="HDS 디자인 시스템 2" width={4096} height={1916} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+            <Image src="/images/hds2.png" alt="HDS 디자인 시스템 2" width={4096} height={1916} style={{ width: '100%', height: 'auto', display: 'block' }} sizes="(max-width: 1023px) 100vw, 1024px" />
           </div>
 
           {/* 해결 */}
@@ -123,7 +123,7 @@ export default function HDSPage() {
 
           {/* 이미지 */}
           <div className={styles.imageFull}>
-            <Image src="/images/hds3.png" alt="HDS 디자인 시스템 3" width={4009} height={2979} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+            <Image src="/images/hds3.png" alt="HDS 디자인 시스템 3" width={4009} height={2979} style={{ width: '100%', height: 'auto', display: 'block' }} sizes="(max-width: 1023px) 100vw, 1024px" />
           </div>
 
           {/* 해결 02 */}
@@ -148,7 +148,7 @@ export default function HDSPage() {
 
           {/* 이미지 */}
           <div className={styles.imageFull}>
-            <Image src="/images/hds4.png" alt="HDS 디자인 시스템 4" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+            <Image src="/images/hds4.png" alt="HDS 디자인 시스템 4" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} sizes="(max-width: 1023px) 100vw, 1024px" />
           </div>
 
           {/* 해결 03 + 결과 + 회고 */}

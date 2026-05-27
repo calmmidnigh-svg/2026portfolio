@@ -22,7 +22,7 @@ export default function UnretiredPage() {
 
         {/* Hero */}
         <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
-          <Image src="/images/unretired1.png" alt="언리타이얼드" fill style={{ objectFit: 'cover' }} unoptimized priority />
+          <Image src="/images/unretired1.png" alt="언리타이얼드" fill style={{ objectFit: 'cover' }} priority sizes="(max-width: 1023px) 100vw, 1024px" />
         </div>
 
         <div className={styles.header} style={{ paddingTop: 0 }}>
@@ -94,7 +94,7 @@ export default function UnretiredPage() {
 
         {/* 이미지 */}
         <div className={styles.imageFull}>
-          <Image src="/images/unretired3.png" alt="언리타이얼드 작업 화면 3" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+          <Image src="/images/unretired3.png" alt="언리타이얼드 작업 화면 3" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} sizes="(max-width: 1023px) 100vw, 1024px" />
         </div>
 
         <div className={styles.container}>
@@ -126,7 +126,7 @@ export default function UnretiredPage() {
 
           {/* 이미지 */}
           <div className={styles.imageFull}>
-            <Image src="/images/unretired2.png" alt="언리타이얼드 작업 화면 2" width={4096} height={1916} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+            <Image src="/images/unretired2.png" alt="언리타이얼드 작업 화면 2" width={4096} height={1916} style={{ width: '100%', height: 'auto', display: 'block' }} sizes="(max-width: 1023px) 100vw, 1024px" />
           </div>
 
           {/* 해결 */}
@@ -174,7 +174,7 @@ export default function UnretiredPage() {
 
           {/* 이미지 */}
           <div className={styles.imageFull}>
-            <Image src="/images/unretired4.png" alt="언리타이얼드 작업 화면 4" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+            <Image src="/images/unretired4.png" alt="언리타이얼드 작업 화면 4" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} sizes="(max-width: 1023px) 100vw, 1024px" />
           </div>
 
           {/* 성과 + 회고 */}
