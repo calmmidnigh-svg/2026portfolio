@@ -140,7 +140,7 @@ export default function HRContractPage() {
                 <ul className={styles.bullets}>
                   <li>신규 B2B SaaS 서비스 출시 완료</li>
                   <li>기획서(표 형태) → 전체 플로우 + 화면 정책을 1인이 설계</li>
-                  <li>HDS 적용으로 6개월 내 출시 달성</li>
+                  <li>출시 목표였던 6개월 내 출시 달성</li>
                   <li>태그 시스템으로 작성 복잡도 해소 + 출력 품질 유지</li>
                 </ul>
                 <div className={styles.highlight}>
