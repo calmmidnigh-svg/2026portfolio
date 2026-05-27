@@ -9,15 +9,10 @@ const PDFViewer = dynamic(() => import('./PDFViewer'), { ssr: false });
 
 export default function ResumePage() {
   const handleDownloadAll = () => {
-    const files = ['/resume-1.pdf', '/resume-2.pdf'];
-    files.forEach((file, i) => {
-      setTimeout(() => {
-        const a = document.createElement('a');
-        a.href = file;
-        a.download = file.split('/').pop() ?? file;
-        a.click();
-      }, i * 300);
-    });
+    const a = document.createElement('a');
+    a.href = '/resume.pdf';
+    a.download = '이력서.pdf';
+    a.click();
   };
 
   return (
@@ -28,8 +23,7 @@ export default function ResumePage() {
           <button onClick={handleDownloadAll} className={styles.downloadBtn}>Download</button>
         </div>
         <div className={styles.content}>
-          <PDFViewer file="/resume-1.pdf" />
-          <PDFViewer file="/resume-2.pdf" />
+          <PDFViewer file="/resume.pdf" />
         </div>
       </div>
       <Footer />
