@@ -67,10 +67,8 @@ export default function UnretiredPage() {
                 <p className={styles.sectionLabel}>사용자정의</p>
               </div>
               <div className={styles.sectionContent}>
-                <p className={styles.text}>
-                  <strong>수강생 (학습자)</strong>{` — 고경력자의 실무 경험을 배우고 싶은 직장인/학생`}<br />
-                  <strong>강사 (고경력자)</strong>{` — 본인의 경험을 강의로 공유하고 싶은 시니어`}
-                </p>
+                <p className={styles.text}><strong>수강생 (학습자)</strong>{` — 고경력자의 실무 경험을 배우고 싶은 직장인/학생`}</p>
+                <p className={styles.text}><strong>강사 (고경력자)</strong>{` — 본인의 경험을 강의로 공유하고 싶은 시니어`}</p>
               </div>
             </div>
 

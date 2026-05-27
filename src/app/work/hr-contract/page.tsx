@@ -70,10 +70,8 @@ export default function HRContractPage() {
                 <p className={styles.sectionLabel}>사용자정의</p>
               </div>
               <div className={styles.sectionContent}>
-                <p className={styles.text}>
-                  <strong>갑 (계약 발행자)</strong>{` — 고객사 HR 담당자. 계약서를 빠르고 간단하게 작성하고 싶음`}<br />
-                  <strong>을 (계약 수령자)</strong>{` — 계약 대상 직원. 계약 내용의 모든 디테일이 정확하게 담긴 문서가 필요`}
-                </p>
+                <p className={styles.text}><strong>갑 (계약 발행자)</strong>{` — 고객사 HR 담당자. 계약서를 빠르고 간단하게 작성하고 싶음`}</p>
+                <p className={styles.text}><strong>을 (계약 수령자)</strong>{` — 계약 대상 직원. 계약 내용의 모든 디테일이 정확하게 담긴 문서가 필요`}</p>
               </div>
             </div>
 

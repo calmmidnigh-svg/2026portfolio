@@ -68,10 +68,8 @@ export default function VOCPage() {
                 <p className={styles.sectionLabel}>사용자정의</p>
               </div>
               <div className={styles.sectionContent}>
-                <p className={styles.text}>
-                  <strong>내부 운영/CS팀</strong>{` — VOC를 수집하고 처리하는 담당자`}<br />
-                  <strong>제품팀</strong>{` — VOC 데이터를 기반으로 개선 우선순위를 결정하는 팀`}
-                </p>
+                <p className={styles.text}><strong>내부 운영/CS팀</strong>{` — VOC를 수집하고 처리하는 담당자`}</p>
+                <p className={styles.text}><strong>제품팀</strong>{` — VOC 데이터를 기반으로 개선 우선순위를 결정하는 팀`}</p>
               </div>
             </div>
 

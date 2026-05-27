@@ -68,10 +68,8 @@ export default function HDSPage() {
                 <p className={styles.sectionLabel}>사용자정의</p>
               </div>
               <div className={styles.sectionContent}>
-                <p className={styles.text}>
-                  <strong>개발팀</strong>{` — 디자인 시스템을 실제로 구현에 적용하는 사용자`}<br />
-                  <strong>디자이너</strong>{` — 컴포넌트를 활용해 화면을 설계하는 사용자`}
-                </p>
+                <p className={styles.text}><strong>개발팀</strong>{` — 디자인 시스템을 실제로 구현에 적용하는 사용자`}</p>
+                <p className={styles.text}><strong>디자이너</strong>{` — 컴포넌트를 활용해 화면을 설계하는 사용자`}</p>
               </div>
             </div>
 
