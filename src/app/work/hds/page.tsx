@@ -26,7 +26,7 @@ export default function HDSPage() {
           <table className={styles.overviewTable}>
             <tbody>
               <tr><td>Project</td><td>Design System · 헬로인사</td></tr>
-              <tr><td>Output</td><td>Figma</td></tr>
+              <tr><td>Output</td><td>Design System</td></tr>
               <tr><td>Role</td><td>Product Designer / 100%</td></tr>
               <tr><td>Period</td><td>2025 ~ 현재</td></tr>
             </tbody>

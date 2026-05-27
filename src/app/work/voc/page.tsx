@@ -28,7 +28,7 @@ export default function VOCPage() {
               <tr><td>Project</td><td>AI Dashboard · 헬로인사</td></tr>
               <tr><td>Output</td><td>Web</td></tr>
               <tr><td>Role</td><td>Product Designer / 100%</td></tr>
-              <tr><td>Period</td><td>2025.11 ~</td></tr>
+              <tr><td>Period</td><td>2026.05</td></tr>
             </tbody>
           </table>
         </div>
