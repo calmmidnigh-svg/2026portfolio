@@ -64,10 +64,10 @@ export default function HRContractPage() {
               </div>
             </div>
 
-            {/* 사용자 누구 */}
+            {/* 타깃 사용자 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>사용자 누구</p>
+                <p className={styles.sectionLabel}>타깃 사용자</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
@@ -77,10 +77,10 @@ export default function HRContractPage() {
               </div>
             </div>
 
-            {/* 사용자 문제정의 */}
+            {/* 문제정의 */}
             <div className={styles.section}>
               <div className={styles.sectionSide}>
-                <p className={styles.sectionLabel}>사용자 문제정의</p>
+                <p className={styles.sectionLabel}>문제정의</p>
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>계약서 도메인은 구조적으로 두 사용자의 니즈가 상충합니다.</p>
