@@ -71,8 +71,8 @@ export default function HRContractPage() {
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
-                  <strong>작성자</strong>{` — 고객사 HR 담당자. 계약서를 빠르고 간단하게 작성하고 싶음`}<br />
-                  <strong>수신자</strong>{` — 계약 대상 직원. 계약 내용의 모든 디테일이 정확하게 담긴 문서가 필요`}
+                  <strong>갑 (계약 발행자)</strong>{` — 고객사 HR 담당자. 계약서를 빠르고 간단하게 작성하고 싶음`}<br />
+                  <strong>을 (계약 수령자)</strong>{` — 계약 대상 직원. 계약 내용의 모든 디테일이 정확하게 담긴 문서가 필요`}
                 </p>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function HRContractPage() {
               <div className={styles.sectionContent}>
                 <p className={styles.text}>계약서 도메인은 구조적으로 두 사용자의 니즈가 상충합니다.</p>
                 <p className={styles.text}>
-                  작성자는 빠르고 단순하게 작성하길 원하지만, 수신자는 모든 세부 내용이 정확히 담긴 문서를 요구합니다. 기존 방식대로라면 작성 화면에서 모든 세부 내용을 직접 입력해야 해 복잡도가 매우 높아지는 문제가 있었습니다.
+                  갑은 빠르고 단순하게 작성하길 원하지만, 을은 모든 세부 내용이 정확히 담긴 문서를 요구합니다. 기존 방식대로라면 작성 화면에서 모든 세부 내용을 직접 입력해야 해 복잡도가 매우 높아지는 문제가 있었습니다.
                 </p>
               </div>
             </div>
