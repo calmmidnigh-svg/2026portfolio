@@ -43,7 +43,7 @@ export default function HRContractPage() {
               </div>
               <div className={styles.sectionContent}>
                 <p className={styles.text}>
-                  회사의 신규 B2B SaaS 사업으로, 모든 고객사에게 표준화된 형식의 전자계약서를 제공하는 서비스를 처음부터 설계해야 했습니다.
+                  25년 업력의 레거시 급여 아웃소싱 ERP 제품회사에서, 처음으로 시도하는 신규 B2B SaaS 사업이었습니다. 모든 고객사에게 표준화된 형식의 전자계약서를 제공하는 서비스를 처음부터 설계해야 했습니다.
                 </p>
                 <ul className={styles.bullets}>
                   <li>명확한 요구사항 없이 큰 비즈니스 로직만 존재하는 상태에서 출발</li>
