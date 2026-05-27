@@ -15,6 +15,14 @@ export default function VOCPage() {
           <Link href="/" className={styles.back}>← 전체 작업</Link>
           <p className={styles.meta}>AI · Vibe Coding · Product Designer</p>
           <h1 className={styles.title}>AI VOC 대시보드</h1>
+        </div>
+
+        {/* Hero — 이미지 영역 */}
+        <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
+          <Image src="/images/voc1.png" alt="AI VOC 대시보드" fill style={{ objectFit: 'cover' }} unoptimized />
+        </div>
+
+        <div className={styles.header} style={{ paddingTop: 0 }}>
           <table className={styles.overviewTable}>
             <tbody>
               <tr><td>역할</td><td>문제 발굴 + 설계 + 구현 (1인)</td></tr>
@@ -23,11 +31,6 @@ export default function VOCPage() {
               <tr><td>기술</td><td>채팅 API + Gemini AI + 대시보드</td></tr>
             </tbody>
           </table>
-        </div>
-
-        {/* Hero — 이미지 영역 */}
-        <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
-          <Image src="/images/voc1.png" alt="AI VOC 대시보드" fill style={{ objectFit: 'cover' }} unoptimized />
         </div>
 
         <div className={styles.container}>

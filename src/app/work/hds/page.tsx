@@ -15,6 +15,14 @@ export default function HDSPage() {
           <Link href="/" className={styles.back}>← 전체 작업</Link>
           <p className={styles.meta}>Design System · 헬로인사 · Product Designer</p>
           <h1 className={styles.title}>HDS 디자인 시스템 구축</h1>
+        </div>
+
+        {/* Hero — 실제 이미지 영역 */}
+        <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
+          <Image src="/images/hds1.png" alt="HDS 디자인 시스템" fill style={{ objectFit: 'cover' }} unoptimized />
+        </div>
+
+        <div className={styles.header} style={{ paddingTop: 0 }}>
           <table className={styles.overviewTable}>
             <tbody>
               <tr><td>역할</td><td>프로덕트 디자이너 (1인 구축)</td></tr>
@@ -22,11 +30,6 @@ export default function HDSPage() {
               <tr><td>기간</td><td>2025 ~ 현재</td></tr>
             </tbody>
           </table>
-        </div>
-
-        {/* Hero — 실제 이미지 영역 */}
-        <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
-          <Image src="/images/hds1.png" alt="HDS 디자인 시스템" fill style={{ objectFit: 'cover' }} unoptimized />
         </div>
 
         <div className={styles.container}>

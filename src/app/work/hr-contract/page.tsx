@@ -15,6 +15,14 @@ export default function HRContractPage() {
           <Link href="/" className={styles.back}>← 전체 작업</Link>
           <p className={styles.meta}>B2B SaaS · 헬로인사 · Product Designer</p>
           <h1 className={styles.title}>HR전자계약서</h1>
+        </div>
+
+        {/* Hero — 실제 제품 스크린샷 */}
+        <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
+          <Image src="/images/contract_main.png" alt="HR전자계약서 화면" fill style={{ objectFit: 'cover' }} quality={100} />
+        </div>
+
+        <div className={styles.header} style={{ paddingTop: 0 }}>
           <table className={styles.overviewTable}>
             <tbody>
               <tr><td>역할</td><td>전체 플로우 설계 + 화면 디자인 + 정책 설계</td></tr>
@@ -22,11 +30,6 @@ export default function HRContractPage() {
               <tr><td>기간</td><td>디자인 시스템 적용 후 6개월 내 출시</td></tr>
             </tbody>
           </table>
-        </div>
-
-        {/* Hero — 실제 제품 스크린샷 */}
-        <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
-          <Image src="/images/contract_main.png" alt="HR전자계약서 화면" fill style={{ objectFit: 'cover' }} quality={100} />
         </div>
 
         <div className={styles.container}>

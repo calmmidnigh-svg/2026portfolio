@@ -15,6 +15,14 @@ export default function UnretiredPage() {
           <Link href="/" className={styles.back}>← 전체 작업</Link>
           <p className={styles.meta}>Side Project · UX Research · Product Designer</p>
           <h1 className={styles.title}>지식 공유 강의 플랫폼</h1>
+        </div>
+
+        {/* Hero — 이미지 영역 */}
+        <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
+          <Image src="/images/unretired1.png" alt="언리타이얼드" fill style={{ objectFit: 'cover' }} unoptimized />
+        </div>
+
+        <div className={styles.header} style={{ paddingTop: 0 }}>
           <table className={styles.overviewTable}>
             <tbody>
               <tr><td>역할</td><td>서비스 기획 및 UX 설계, 핵심 화면 설계</td></tr>
@@ -22,11 +30,6 @@ export default function UnretiredPage() {
               <tr><td>결과물</td><td>iOS / Android 앱, 웹 어드민</td></tr>
             </tbody>
           </table>
-        </div>
-
-        {/* Hero — 이미지 영역 */}
-        <div className={styles.imageFull} style={{ overflow: 'hidden', position: 'relative', height: '576px' }}>
-          <Image src="/images/unretired1.png" alt="언리타이얼드" fill style={{ objectFit: 'cover' }} unoptimized />
         </div>
 
         <div className={styles.container}>
