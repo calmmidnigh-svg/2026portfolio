@@ -2,20 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import GNB from '@/components/GNB';
 import Footer from '@/components/Footer';
-import WorkImageSlider from '@/components/WorkImageSlider';
 import styles from './page.module.scss';
-
-const SLIDER_IMAGES = [
-  { src: '/images/contract-g1.png', alt: 'HR전자계약서 상세 1' },
-  { src: '/images/contract-g2.png', alt: 'HR전자계약서 상세 2' },
-  { src: '/images/contract-g3.png', alt: 'HR전자계약서 상세 3' },
-  { src: '/images/contract-g4.png', alt: 'HR전자계약서 상세 4' },
-  { src: '/images/contract-g5.png', alt: 'HR전자계약서 상세 5' },
-  { src: '/images/contract-g6.png', alt: 'HR전자계약서 상세 6' },
-  { src: '/images/contract-g7.png', alt: 'HR전자계약서 상세 7' },
-  { src: '/images/contract-g8.png', alt: 'HR전자계약서 상세 8' },
-  { src: '/images/contract-g9.png', alt: 'HR전자계약서 상세 9' },
-];
 
 export default function HRContractPage() {
   return (
@@ -105,7 +92,7 @@ export default function HRContractPage() {
 
           {/* 이미지 */}
           <div className={styles.imageFull}>
-            <Image src="/images/contract-g1.png" alt="HR전자계약서 작업 화면" width={4096} height={1916} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+            <Image src="/images/contract2.png" alt="HR전자계약서 작업 화면" width={4096} height={1916} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
           {/* 해결 01 */}
@@ -132,7 +119,7 @@ export default function HRContractPage() {
 
           {/* 이미지 */}
           <div className={styles.imageFull}>
-            <Image src="/images/contract-g2.png" alt="HR전자계약서 작업 화면 2" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+            <Image src="/images/contract3.png" alt="HR전자계약서 작업 화면 3" width={4171} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
           </div>
 
           {/* 해결 02 */}
@@ -155,8 +142,10 @@ export default function HRContractPage() {
             </div>
           </div>
 
-          {/* 이미지 슬라이더 */}
-          <WorkImageSlider images={SLIDER_IMAGES} />
+          {/* 이미지 */}
+          <div className={styles.imageFull}>
+            <Image src="/images/contract4.png" alt="HR전자계약서 작업 화면 4" width={4096} height={2304} style={{ width: '100%', height: 'auto', display: 'block' }} unoptimized />
+          </div>
 
           {/* 성과 + 회고 */}
           <div className={styles.body}>
