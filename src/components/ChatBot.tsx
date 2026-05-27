@@ -11,6 +11,19 @@ interface Message {
 
 const SUGGESTIONS = ['연차가 어떻게 되나요?', '어떤 회사에서 일했나요?', '어떤 경험을 가지고있나요?'];
 
+const URL_REGEX = /(https?:\/\/[^\s)]+)/g;
+
+const renderWithLinks = (text: string) =>
+  text.split(URL_REGEX).map((part, i) =>
+    URL_REGEX.test(part) ? (
+      <a key={i} href={part} target="_blank" rel="noopener noreferrer" style={{ color: '#126DFF', textDecoration: 'underline', wordBreak: 'break-all' }}>
+        {part}
+      </a>
+    ) : (
+      part
+    )
+  );
+
 export default function ChatBot() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
@@ -69,7 +82,7 @@ export default function ChatBot() {
         <div className={styles.messages} ref={messagesContainerRef}>
           {messages.map((m, i) => (
             <div key={i} className={`${styles.message} ${styles[m.role]}`}>
-              {m.content}
+              {renderWithLinks(m.content)}
             </div>
           ))}
           {loading && (
