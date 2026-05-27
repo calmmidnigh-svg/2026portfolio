@@ -18,18 +18,6 @@ const PROJECTS = [
     },
   },
   {
-    title: '디자인시스템 구축',
-    tags: ['Design System'],
-    image: '/images/hds1.png',
-    href: '/work/hds',
-    overview: {
-      project: 'Design System · 헬로인사',
-      output: 'Design System',
-      role: 'Product Designer / 100%',
-      period: '2025 ~ 현재',
-    },
-  },
-  {
     title: 'AI VOC 대시보드',
     tags: ['AI', 'Vibe Coding'],
     image: '/images/voc1.png',
@@ -39,6 +27,18 @@ const PROJECTS = [
       output: 'Web',
       role: 'Product Designer / 100%',
       period: '2026.05',
+    },
+  },
+  {
+    title: '디자인시스템 구축',
+    tags: ['Design System'],
+    image: '/images/hds1.png',
+    href: '/work/hds',
+    overview: {
+      project: 'Design System · 헬로인사',
+      output: 'Design System',
+      role: 'Product Designer / 100%',
+      period: '2025 ~ 현재',
     },
   },
   {
