@@ -14,7 +14,7 @@ const PROJECTS = [
       project: 'B2B SaaS · 헬로인사',
       output: 'Web',
       role: 'Product Designer / 100%',
-      period: '2025',
+      period: '2025.06 ~ 2025.11',
     },
   },
   {
@@ -24,7 +24,7 @@ const PROJECTS = [
     href: '/work/hds',
     overview: {
       project: 'Design System · 헬로인사',
-      output: 'Figma',
+      output: 'Design System',
       role: 'Product Designer / 100%',
       period: '2025 ~ 현재',
     },
@@ -35,10 +35,10 @@ const PROJECTS = [
     image: '/images/voc1.png',
     href: '/work/voc',
     overview: {
-      project: 'AI · 헬로인사',
+      project: 'AI Dashboard · 헬로인사',
       output: 'Web',
       role: 'Product Designer / 100%',
-      period: '2025.11 ~',
+      period: '2026.05',
     },
   },
   {

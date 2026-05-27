@@ -28,7 +28,7 @@ export default function HRContractPage() {
               <tr><td>Project</td><td>B2B SaaS · 헬로인사</td></tr>
               <tr><td>Output</td><td>Web</td></tr>
               <tr><td>Role</td><td>Product Designer / 100%</td></tr>
-              <tr><td>Period</td><td>2025</td></tr>
+              <tr><td>Period</td><td>2025.06 ~ 2025.11</td></tr>
             </tbody>
           </table>
         </div>
