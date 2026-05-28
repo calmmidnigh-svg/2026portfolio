@@ -11,7 +11,7 @@ export default function Hero() {
             <p className={styles.name}>최윤정</p>
             <p className={styles.title}>프로덕트디자이너</p>
             <p className={styles.desc}>
-              {`풀리지 않는 문제는 가설을 세우고 직접 만들어 검증합니다.\n\n카페에서 즉석 인터뷰로 전체 화면 방향을 바꾼 적 있고, 필요한 도구가 없으면 바이브 코딩으로 직접 구현합니다.\n\n문제를 발견하면 권한이 없어도 일단 시도하는 디자이너입니다.`}
+              {`풀리지 않는 문제는 가설을 세우고 직접 만들어 검증합니다.\n\n카페에서 즉석 인터뷰로 전체 화면 방향을 바꾼 적 있고, 필요한 도구가 없으면 바이브 코딩으로 직접 구현합니다.\n\n막힌 길에서도 방법을 찾아냅니다.`}
             </p>
           </div>
           <div className={styles.links}>
